@@ -6,9 +6,9 @@ Een eenvoudige webapp om oefenvragen te maken voor meerdere examens. Draait voll
 
 - Kies een examen en start.
 - Je krijgt één vraag tegelijk (meerkeuze) met direct feedback.
-- Een fout antwoord wordt rood gemarkeerd en je probeert opnieuw.
-- Bij een goed antwoord ga je door naar de volgende vraag.
-- Aan het einde zie je het aantal foute pogingen.
+- Bij een fout antwoord zie je direct het juiste antwoord en ga je door naar de volgende vraag; de fout beantwoorde vraag komt later terug.
+- De sessie eindigt pas als je elke vraag goed hebt beantwoord.
+- Aan het einde zie je hoeveel vragen je fout had en het aantal foute pogingen.
 
 ## Publiceren op GitHub Pages
 

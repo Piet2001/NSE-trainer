@@ -6,6 +6,9 @@ let questions = [];
 let index = 0;
 let mistakes = 0;
 let answered = false;
+let total = 0;
+let mastered = 0;
+let failed = new Set();
 
 function show(view) {
   views.forEach((v) => { $(v).hidden = v !== view; });
@@ -74,6 +77,9 @@ async function startExam() {
     showError('Dit examen bevat nog geen vragen.');
     return;
   }
+  total = questions.length;
+  mastered = 0;
+  failed = new Set();
   index = 0;
   mistakes = 0;
   show('quiz-view');
@@ -83,8 +89,8 @@ async function startExam() {
 function renderQuestion() {
   const q = questions[index];
   answered = false;
-  $('counter').textContent = `Vraag ${index + 1} van ${questions.length}`;
-  $('progress-bar').style.width = `${(index / questions.length) * 100}%`;
+  $('counter').textContent = `Goed beantwoord: ${mastered} van ${total} · nog ${questions.length - index} in de wachtrij`;
+  $('progress-bar').style.width = `${(mastered / total) * 100}%`;
   $('question').textContent = q.question;
   $('feedback').textContent = '';
   $('feedback').className = '';
@@ -134,9 +140,31 @@ function finishCorrect(q) {
   $('check').hidden = true;
   $('feedback').className = 'ok';
   $('feedback').textContent = '✔ Goed!' + (q.explanation ? ` ${q.explanation}` : '');
+  mastered++;
+  showNext();
+}
+
+function showNext() {
   $('next').textContent = index === questions.length - 1 ? 'Afronden' : 'Volgende';
   $('next').hidden = false;
   $('next').focus();
+}
+
+function failQuestion(q) {
+  mistakes++;
+  answered = true;
+  failed.add(q);
+  questions.push(q);
+  const correct = [].concat(q.answer);
+  document.querySelectorAll('#options button').forEach((b) => {
+    b.disabled = true;
+    b.classList.remove('selected');
+    if (correct.includes(Number(b.dataset.index))) b.classList.add('correct');
+  });
+  $('check').hidden = true;
+  $('feedback').className = 'no';
+  $('feedback').textContent = '✘ Fout. Het juiste antwoord staat groen; de vraag komt later terug.' + (q.explanation ? ` ${q.explanation}` : '');
+  showNext();
 }
 
 function checkMulti() {
@@ -153,11 +181,7 @@ function checkMulti() {
     });
     finishCorrect(q);
   } else {
-    mistakes++;
-    buttons.forEach((b) => b.classList.remove('selected'));
-    $('check').disabled = true;
-    $('feedback').className = 'no';
-    $('feedback').textContent = '✘ Fout, probeer het opnieuw.';
+    failQuestion(q);
   }
 }
 
@@ -170,11 +194,8 @@ function choose(i, button) {
     button.classList.add('correct');
     finishCorrect(q);
   } else {
-    mistakes++;
     button.classList.add('wrong');
-    button.disabled = true;
-    feedback.className = 'no';
-    feedback.textContent = '✘ Fout, probeer het opnieuw.';
+    failQuestion(q);
   }
 }
 
@@ -183,7 +204,7 @@ function next() {
   if (index >= questions.length) {
     $('progress-bar').style.width = '100%';
     $('result-text').textContent =
-      `Je hebt ${questions.length} vragen beantwoord met ${mistakes} foute poging(en).`;
+      `Alles goed! ${total} vragen, waarvan ${failed.size} minstens één keer fout (${mistakes} foute poging(en)).`;
     show('result-view');
   } else {
     renderQuestion();
