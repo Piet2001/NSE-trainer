@@ -57,18 +57,43 @@ function currentExam() {
   return exams[Number($('exam-select').value)];
 }
 
-function updateDescription() {
-  $('exam-description').textContent = currentExam()?.description ?? '';
+const questionCache = new Map();
+
+async function loadExamQuestions(exam) {
+  if (!questionCache.has(exam)) {
+    const files = [].concat(exam.files ?? exam.file);
+    const parts = await Promise.all(files.map(loadJson));
+    questionCache.set(exam, parts.flatMap((p) => p.questions));
+  }
+  return questionCache.get(exam);
+}
+
+async function updateDescription() {
+  const exam = currentExam();
+  $('exam-description').textContent = exam?.description ?? '';
+  if (!exam) return;
+  $('error').hidden = true;
+  try {
+    const count = (await loadExamQuestions(exam)).length;
+    if (exam !== currentExam()) return;
+    $('count').max = count;
+    $('count').value = count;
+    $('count-max').textContent = `van ${count}`;
+    $('start').disabled = count === 0;
+  } catch (e) {
+    showError(e.message);
+  }
 }
 
 async function startExam() {
   $('error').hidden = true;
   try {
-    const exam = currentExam();
-    const files = [].concat(exam.files ?? exam.file);
-    const parts = await Promise.all(files.map(loadJson));
-    const all = parts.flatMap((p) => p.questions);
-    questions = $('shuffle').checked ? shuffle(all) : all;
+    const all = await loadExamQuestions(currentExam());
+    const wanted = Math.round(Number($('count').value)) || all.length;
+    const n = Math.min(Math.max(wanted, 1), all.length);
+    $('count').value = n;
+    questions = $('shuffle').checked ? shuffle(all) : [...all];
+    questions = questions.slice(0, n);
   } catch (e) {
     showError(e.message);
     return;

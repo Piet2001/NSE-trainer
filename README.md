@@ -4,7 +4,7 @@ Een eenvoudige webapp om oefenvragen te maken voor meerdere examens. Draait voll
 
 ## Werking
 
-- Kies een examen en start.
+- Kies een examen en het aantal vragen (minimaal 1, maximaal het aantal vragen in het examen) en start.
 - Je krijgt één vraag tegelijk (meerkeuze) met direct feedback.
 - Bij een fout antwoord zie je direct het juiste antwoord en ga je door naar de volgende vraag; de fout beantwoorde vraag komt later terug.
 - De sessie eindigt pas als je elke vraag goed hebt beantwoord.
