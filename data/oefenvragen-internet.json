@@ -1,0 +1,396 @@
+{
+  "questions": [
+    {
+      "question": "You have implemented the application sensor and the corresponding firewall policy as shown in the exhibits. You cannot access any of the Google applications, but you are able to access www.fortinet.com. Which two actions would you take to resolve the issue? (Choose two.)",
+      "options": [
+        "Set SSL inspection to deep-content inspection.",
+        "Move up Google in the Application and Filter Overrides section to set its priority lot",
+        "Add 'Google'.com to the URL category in the security profile.",
+        "Change the Inspection mode to Flow-based",
+        "Set the action for Google in the Application and Filter Overrides section to Allow"
+      ],
+      "answer": [
+        1,
+        4
+      ],
+      "images": [
+        "data/img/oefenvragen/q01-1.png",
+        "data/img/oefenvragen/q01-2.png"
+      ]
+    },
+    {
+      "question": "The FortiGate device HQ-NGFW-1 with the IP address 10.0.13.254 sends logs to the FortiAnalyzer device with the IP address 10.0.13.125. The administrator wants to verify that reliable logging is enabled on HQ-NGFW-1. Which exhibit helps with the verification?",
+      "options": [
+        "Exhibit A (FortiAnalyzer device list met slotje bij Real Time)",
+        "Exhibit B (CLI: config log fortianalyzer setting, upload-option realtime)",
+        "Exhibit C (FortiAnalyzer device list zonder slotje bij Real Time)",
+        "Exhibit D (sniffer-output)"
+      ],
+      "answer": 1,
+      "images": [
+        "data/img/oefenvragen/q02-1.png",
+        "data/img/oefenvragen/q02-2.png",
+        "data/img/oefenvragen/q02-3.png",
+        "data/img/oefenvragen/q02-4.png"
+      ]
+    },
+    {
+      "question": "An administrator has configured an Application Overrides for the ABC.Com application signature and set the Action to Allow. This application control profile is then applied to a firewall policy that is scanning all outbound traffic. Logging is enabled in the firewall policy. To test the configuration, the administrator accessed the ABC.Com web site several times. Why are there no logs generated under security logs for ABC.Com?",
+      "options": [
+        "The ABC Com is hitting the category Excessive-Bandwidth.",
+        "The ABC.Com Type is set as Application instead of Filter.",
+        "The ABC.Com is configured under application profile, which must be configured as a web filter profile.",
+        "The ABC Com Action is set to Allow"
+      ],
+      "answer": 3,
+      "images": [
+        "data/img/oefenvragen/q03-1.png"
+      ]
+    },
+    {
+      "question": "Which three strategies are valid SD-WAN rule strategies for member selection? (Choose three answers)",
+      "options": [
+        "Lowest Cost (SLA) without load balancing",
+        "Manual with load balancing",
+        "Lowest Quality (SLA) with load balancing",
+        "Lowest Cost (SLA) with load balancing",
+        "Best Quality with load balancing"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "question": "Which statement correctly describes NetAPI polling mode for the FSSO collector agent?",
+      "options": [
+        "The collector agent uses a Windows API to query DCs for user logins.",
+        "The NetSessionEnum function is used to track user logouts.",
+        "NetAPI polling can increase bandwidth usage in large networks.",
+        "The collector agent must search Windows application event logs."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which two components are part of the secure internet access (SIA) agent-based mode on FortiSASE? (Choose two.)",
+      "options": [
+        "FortiSASE Firewall-as-a-Service (FWaaS)",
+        "The proxy auto-configuration (PAC) file",
+        "VPN policies",
+        "FortiExtender"
+      ],
+      "answer": [
+        0,
+        2
+      ]
+    },
+    {
+      "question": "Based on the current HA status, an administrator updates the override and priority parameters on HQ-NGFW-1 and HQ-NGFW-2 as shown in the exhibits. What would be the expected outcome in the HA cluster?",
+      "options": [
+        "HQ-NGFW-2 will take over as the primary because it has the override enable setting and higher priority than HQ-NGFW-1.",
+        "HQ-NGFW-1 will remain the primary because HQ-NGFW-2 has lower priority",
+        "The HA cluster will become out of sync because the override setting must match on all HA members.",
+        "HQ-NGFW-1 will synchronize the override disable setting with HQ-NGFW-2."
+      ],
+      "answer": 0,
+      "images": [
+        "data/img/oefenvragen/q07-1.png",
+        "data/img/oefenvragen/q07-2.png",
+        "data/img/oefenvragen/q07-3.png"
+      ]
+    },
+    {
+      "question": "An administrator wants to configure dead peer detection (DPD) on IPsec VPN for detecting dead tunnels. The requirement is that FortiGate sends DPD probes only when there is no inbound traffic. Which DPD mode on FortiGate meets this requirement?",
+      "options": [
+        "Enabled",
+        "On Idle",
+        "Disabled",
+        "On Demand"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which two statements about equal-cost multi-path (ECMP) configuration on FortiGate are true? (Choose two.)",
+      "options": [
+        "If SD-WAN is disabled, you can configure the parameter v4-ecmp-mode to volume-based.",
+        "If SD-WAN is enabled, you can configure routes with unequal distance and priority values to be part of ECMP.",
+        "If SD-WAN is disabled, you configure the load balancing algorithm in config system settings.",
+        "If SD-WAN is enabled, you control the load balancing algorithm with the parameter load-balance-mode."
+      ],
+      "answer": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": "You have created a web filter profile named restrict_media-profile with a daily category usage quota. When you are adding the profile to the firewall policy, the restrict_media-profile is not listed in the available web profile drop down. What could be the reason?",
+      "options": [
+        "The firewall policy is in no-inspection mode instead of deep-inspection.",
+        "The inspection mode in the firewall policy is not matching with web filter profile feature set.",
+        "The web filter profile is already referenced in another firewall policy.",
+        "The naming convention used in the web filter profile is restricting it in the firewall policy."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "As an administrator you have created an IPS profile, but it is not performing as expected. While testing you got the output as shown in the exhibit. What could be the possible reason of the diagnose output shown in the exhibit?",
+      "options": [
+        "There is a no firewall policy configured with an IPS security profile.",
+        "FortiGate entered into IPS fail open state.",
+        "Administrator entered the command diagnose test application ipsmonitor 5.",
+        "Administrator entered the command diagnose test application ipsmonitor 99."
+      ],
+      "answer": 0,
+      "images": [
+        "data/img/oefenvragen/q11-1.png"
+      ]
+    },
+    {
+      "question": "The predefined deep-inspection and custom-deep-inspection profiles exclude some web categories from SSL inspection, as shown in the exhibit. For which two reasons are these web categories exempted? (Choose two.)",
+      "options": [
+        "The FortiGate temporary certificate denies the browser's access to websites that use HTTP Strict Transport Security.",
+        "These websites are in an allowlist of reputable domain names maintained by FortiGuard.",
+        "The resources utilization is optimized because these websites are in the trusted domain list on FortiGate.",
+        "The legal regulation aims to prioritize user privacy and protect sensitive information for these websites."
+      ],
+      "answer": [
+        0,
+        3
+      ],
+      "images": [
+        "data/img/oefenvragen/q12-1.png"
+      ]
+    },
+    {
+      "question": "The NOC team connects to the FortiGate GUI with the NOC_Access admin profile. They request that their GUI sessions do not disconnect too early during inactivity. What must the administrator configure to answer this specific request from the NOC team?",
+      "options": [
+        "Move NOC_Access to the top of the list to ensure all profile settings take effect.",
+        "Increase the offline value of the Override Idle Timeout parameter in the NOC_Access admin profile.",
+        "Ensure that all NOC_Access users are assigned the super_admin role to guarantee access",
+        "Increase the admintimeout value under config system accprofile NOC_Access."
+      ],
+      "answer": 3,
+      "images": [
+        "data/img/oefenvragen/q13-1.png"
+      ]
+    },
+    {
+      "question": "Based on this partial configuration, what are the two possible outcomes when FortiGate enters conserve mode? (Choose two.)",
+      "options": [
+        "Administrators cannot change the configuration.",
+        "FortiGate skips quarantine actions.",
+        "Administrators must restart FortiGate to allow new session.",
+        "FortiGate drops new sessions requiring inspection."
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "images": [
+        "data/img/oefenvragen/q14-1.png"
+      ]
+    },
+    {
+      "question": "What is the primary FortiGate election process when the HA override setting is enabled?",
+      "options": [
+        "Connected monitored ports > Priority > HA uptime > FortiGate serial number",
+        "Connected monitored ports > Priority > System uptime > FortiGate serial number",
+        "Connected monitored ports > HA uptime > Priority > FortiGate serial number",
+        "Connected monitored ports > System uptime > Priority > FortiGate serial number"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An administrator wanted to configure an IPS sensor to block traffic that triggers a signature set number of times during a specific time period. How can the administrator achieve the objective?",
+      "options": [
+        "Use IPS group signatures, set rate-mode 60.",
+        "Use IPS packet logging option with periodical filter option.",
+        "Use IPS filter, rate-mode periodical option.",
+        "Use IPS signatures, rate-mode periodical option."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A FortiGate firewall policy is configured with active authentication, however, the user cannot authenticate when accessing a website. Which protocol must FortiGate allow even though the user cannot authenticate?",
+      "options": [
+        "LDAP",
+        "TACACS+",
+        "Kerberos",
+        "DNS"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Why does the FortiGate administrator need this configuration?",
+      "options": [
+        "To set up a RADIUS server Secret.",
+        "To authenticate Any FortiGate user groups.",
+        "To authenticate and match the Training OU on the RADIUS server.",
+        "To authenticate only the Training user group."
+      ],
+      "answer": 3,
+      "images": [
+        "data/img/oefenvragen/q18-1.png"
+      ]
+    },
+    {
+      "question": "What would be the impact of these settings on the Server certificate SNI check configuration on FortiGate?",
+      "options": [
+        "FortiGate will accept and use the CN in the server certificate for URL filtering if the SNI does not match the CN or SAN fields.",
+        "FortiGate will accept the connection with a warning if the SNI does not match the CN or SAN fields.",
+        "FortiGate will close the connection if the SNI does not match the CN or SAN fields.",
+        "FortiGate will close the connection if the SNI does not match the CN and SAN fields."
+      ],
+      "answer": 2,
+      "images": [
+        "data/img/oefenvragen/q19-1.png"
+      ]
+    },
+    {
+      "question": "Which three statements explain a flow-based antivirus profile? (Choose three answers)",
+      "options": [
+        "FortiGate buffers the whole file but transmits to the client at the same time.",
+        "Flow-based inspection uses a hybrid of the scanning modes available in proxy-based inspection.",
+        "If a virus is detected, the last packet is delivered to the client.",
+        "Flow-based inspection optimizes performance compared to proxy-based inspection.",
+        "The IPS engine handles the process as a standalone."
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "question": "You have implemented the application sensor and the corresponding firewall policy as shown in the exhibits. Which two factors can you observe from these configurations? (Choose two.)",
+      "options": [
+        "YouTube access is blocked based on Excessive-Bandwidth Application and Filter override setting",
+        "Facebook access is blocked based on the category filter settings.",
+        "Facebook access is allowed but you cannot play Facebook videos based on Video/Audio category filter settings.",
+        "YouTube search is allowed based on the Google Application and Filter override settings."
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "images": [
+        "data/img/oefenvragen/q21-1.png",
+        "data/img/oefenvragen/q21-2.png"
+      ]
+    },
+    {
+      "question": "You deployed a FortiGate Cloud-Native Firewall (CNF) in AWS. During the deployment, which components must the FortiGate CNF create to handle traffic from the EC2 instance?",
+      "options": [
+        "The customer VPC and GWLBe",
+        "The gateway load balancer endpoint (GWLBe) in the customer virtual private cloud (VPC)",
+        "The CNF VPC, customer VPC, and GWLB",
+        "The GWLB, GWLBe, and the internet gateway (IGW) in the customer VPC"
+      ],
+      "answer": 1,
+      "images": [
+        "data/img/oefenvragen/q22-1.png"
+      ]
+    },
+    {
+      "question": "A network administrator is reviewing firewall policies in both Interface Pair View and By Sequence View. The policies appear in a different order in each view. Why is the policy order different in these two views?",
+      "options": [
+        "By Sequence View groups policies based on rule priority, while Interface Pair View always follows the order of traffic logs.",
+        "The firewall dynamically reorders policies in Interface Pair View based on recent traffic patterns, but By Sequence View remains static.",
+        "Interface Pair View sorts policies based on matching interfaces, while By Sequence View shows the actual processing order of rules.",
+        "Policies in Interface Pair View are prioritized by security levels, while By Sequence View strictly follows the administrator's manual ordering."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An administrator has configured a dialup IPsec VPN on FortiGate with add-route enabled. However, the static route is not showing in the routing table. Which two statements about this scenario are correct? (Choose two.)",
+      "options": [
+        "The administrator must use a policy route instead of a static route for add-route to work properly.",
+        "The administrator must ensure phase 2 is successfully established",
+        "The administrator must define the remote network correctly in the phase 2 selectors.",
+        "The administrator must enable a dynamic routing protocol on the dialup interface."
+      ],
+      "answer": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": "A network administrator has enabled full SSL inspection and web filtering on FortiGate. When visiting any HTTPS websites, the browser reports certificate warning errors. When visiting HTTP websites, the browser does not report errors. What is the reason for the certificate warning errors?",
+      "options": [
+        "The option invalid SSL certificates is set to allow on the SSL/SSH inspection profile.",
+        "The matching firewall policy is set to proxy inspection mode.",
+        "The browser does not trust the certificate used by FortiGate for SSL inspection.",
+        "The certificate used by FortiGate for SSL inspection does not contain the required certificate extensions."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "FortiGate is operating in NAT mode and has two physical interfaces connected to the LAN and DMZ networks respectively. Which two statements about the requirements of connected physical interfaces on FortiGate are true? (Choose two.)",
+      "options": [
+        "Both interfaces must have DHCP enabled and interfaces set to LAN and DMZ roles assigned.",
+        "Both interfaces must have the interface role assigned.",
+        "Both interfaces must have directly connected routes on the routing table.",
+        "Both interfaces must have IP addresses assigned."
+      ],
+      "answer": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": "How does FortiExtender connect to FortiSASE in a site-based, remote internet access method?",
+      "options": [
+        "FortiExtender uses a Virtual Extensible LAN (VXLAN)-over-IPsec connection.",
+        "FortiExtender establishes a secure SSL connection using FortiClient.",
+        "FortiExtender first connects to a FortiGate LAN extension through a secure web gateway (SWG).",
+        "FortiExtender uses the proxy auto-configuration (PAC) file and an explicit web proxy to connect."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A web filter profile configuration and firewall policy configuration are shown. You are trying to access www.facebook.com, but you are redirected to a FortiGuard web filtering block page. Based on the exhibits, what is the possible cause of the issue?",
+      "options": [
+        "The web rating override configuration is incorrect.",
+        "The web filter profile feature set is configured incorrectly.",
+        "The firewall policy inspection mode is incorrect.",
+        "For www.facebook.com the URL filter action is incorrect."
+      ],
+      "answer": 2,
+      "images": [
+        "data/img/oefenvragen/q28-1.png",
+        "data/img/oefenvragen/q28-2.png",
+        "data/img/oefenvragen/q28-3.png"
+      ]
+    },
+    {
+      "question": "Based on the routing table shown in the exhibit, which two statements are true? (Choose two.)",
+      "options": [
+        "A packet with the source IP address 10.0.13.10 arriving on port2 is allowed if strict RPF is disabled.",
+        "A packet with the source IP address 10.100.110.10 arriving on port2 is allowed if strict RPF is enabled.",
+        "A packet with the source IP address 10.100.110.10 arriving on port3 is allowed if strict RPF is disabled.",
+        "A packet with the source IP address 10.10.10.10 arriving on port2 is allowed if strict RPF is enabled."
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "images": [
+        "data/img/oefenvragen/q29-1.png"
+      ]
+    },
+    {
+      "question": "What are two characteristics of HA cluster heartbeat IP addresses in a FortiGate device? (Choose two.)",
+      "options": [
+        "Heartbeat IP addresses are used to distinguish between cluster members.",
+        "The heartbeat interface of the primary device in the cluster is always assigned IP address 169.254.0.1.",
+        "A change in the heartbeat IP address happens when a FortiGate device joins or leaves the cluster.",
+        "Heartbeat interfaces have virtual IP addresses that are manually assigned."
+      ],
+      "answer": [
+        0,
+        2
+      ]
+    }
+  ]
+}

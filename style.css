@@ -11,7 +11,9 @@ button.primary { background: #2563eb; color: #fff; border-color: #2563eb; }
 #options button:hover:not(:disabled) { background: #eef3ff; }
 #options button.correct { background: #d1fae5; border-color: #059669; }
 #options button.wrong { background: #fee2e2; border-color: #dc2626; }
+#options button.selected { background: #dbeafe; border-color: #2563eb; }
 #options button:disabled { cursor: default; }
+#images img { max-width: 100%; display: block; margin: 0 0 .8rem; border: 1px solid #e5e7eb; border-radius: 6px; }
 .progress { height: 6px; background: #e5e7eb; border-radius: 3px; overflow: hidden; }
 #progress-bar { height: 100%; width: 0; background: #2563eb; transition: width .3s; }
 #counter { color: #6b7280; font-size: .9rem; }

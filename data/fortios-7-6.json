@@ -1,0 +1,1121 @@
+{
+  "questions": [
+    {
+      "question": "Which two settings directly reduce the FortiGate administrative attack surface? (Choose two.)",
+      "options": [
+        "Configure trusted hosts on administrator accounts.",
+        "Enable HTTP administrative access on all interfaces.",
+        "Enable only HTTPS and SSH on interfaces that require management access.",
+        "Set all interface roles to Undefined."
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Correct answers: Configure trusted hosts on administrator accounts.; Enable only HTTPS and SSH on interfaces that require management access."
+    },
+    {
+      "question": "What is the default global administrator idle timeout on FortiGate?",
+      "options": [
+        "1 minute",
+        "5 minutes",
+        "10 minutes",
+        "15 minutes"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: 5 minutes"
+    },
+    {
+      "question": "Which statement about FortiGate NAT mode is correct?",
+      "options": [
+        "Traffic interfaces do not require IP addresses.",
+        "FortiGate forwards only according to destination MAC addresses.",
+        "Traffic interfaces have IP addresses and create connected routes.",
+        "Only the management interface has an IP address."
+      ],
+      "answer": 2,
+      "explanation": "Correct answer: Traffic interfaces have IP addresses and create connected routes."
+    },
+    {
+      "question": "Local connected networks are reachable, but FortiGuard services are not. Which missing configuration is the most likely cause?",
+      "options": [
+        "A default route",
+        "An HA override setting",
+        "A proxy-based inspection profile",
+        "A local-in policy for DNS"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: A default route"
+    },
+    {
+      "question": "Which transport indicates that reliable logging to FortiAnalyzer is enabled?",
+      "options": [
+        "UDP/514",
+        "TCP",
+        "ICMP",
+        "ESP"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: TCP"
+    },
+    {
+      "question": "Which FortiAnalyzer mode provides SQL-based analysis, FortiView, event management, and reporting?",
+      "options": [
+        "Collector",
+        "Analyzer",
+        "Sniffer",
+        "Passive"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Analyzer"
+    },
+    {
+      "question": "An Application Control override is configured with action Allow. What is the normal logging behavior?",
+      "options": [
+        "The application is blocked and logged.",
+        "The application is allowed and a security log is always generated.",
+        "The application is allowed without an Application Control security log.",
+        "Only a start log is generated."
+      ],
+      "answer": 2,
+      "explanation": "Correct answer: The application is allowed without an Application Control security log."
+    },
+    {
+      "question": "Which firewall-policy logging setting records traffic logs for all sessions, even when no security event occurs?",
+      "options": [
+        "Security Events",
+        "All Sessions",
+        "Local Traffic only",
+        "Implicit logging"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: All Sessions"
+    },
+    {
+      "question": "What happens to logs after FortiAnalyzer receives them?",
+      "options": [
+        "They are stored only in reports.",
+        "They are stored as raw/archive logs and then inserted into SQL for analysis.",
+        "They are deleted after parsing.",
+        "They are converted to DNS records."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: They are stored as raw/archive logs and then inserted into SQL for analysis."
+    },
+    {
+      "question": "A packet capture shows UDP/514 from FortiGate to FortiAnalyzer. What does this indicate?",
+      "options": [
+        "Reliable logging is enabled.",
+        "The traffic is consistent with standard non-reliable logging.",
+        "SSL/OFTP is definitely enabled.",
+        "FortiAnalyzer is operating in Collector mode."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: The traffic is consistent with standard non-reliable logging."
+    },
+    {
+      "question": "How does FortiGate evaluate firewall policies?",
+      "options": [
+        "Highest policy ID first",
+        "Lowest policy ID first",
+        "Top to bottom; the first complete match wins",
+        "Randomly after route lookup"
+      ],
+      "answer": 2,
+      "explanation": "Correct answer: Top to bottom; the first complete match wins"
+    },
+    {
+      "question": "Which policy type controls HTTPS or SSH traffic destined to the FortiGate itself?",
+      "options": [
+        "Forward firewall policy",
+        "Local-in policy",
+        "Central SNAT policy",
+        "Multicast policy"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Local-in policy"
+    },
+    {
+      "question": "How are different firewall-policy criteria, such as incoming interface, source, destination, schedule, and service, logically combined?",
+      "options": [
+        "OR",
+        "XOR",
+        "AND",
+        "Only destination is evaluated"
+      ],
+      "answer": 2,
+      "explanation": "Correct answer: AND"
+    },
+    {
+      "question": "A firewall policy contains three source address objects in the Source field. How are the objects evaluated within that field?",
+      "options": [
+        "All three must match.",
+        "Any one of the three may match.",
+        "Only the first object is evaluated.",
+        "The objects are ignored when NAT is enabled."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Any one of the three may match."
+    },
+    {
+      "question": "Why can a firewall policy that uses an FQDN address object unexpectedly fail to match?",
+      "options": [
+        "FortiGate cannot resolve and cache the FQDN.",
+        "HA override is disabled.",
+        "The policy ID is too high.",
+        "Proxy mode is disabled."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: FortiGate cannot resolve and cache the FQDN."
+    },
+    {
+      "question": "Which statement about firewall policy IDs is correct?",
+      "options": [
+        "The policy ID determines evaluation order.",
+        "The policy ID remains an identifier when the policy is moved.",
+        "Policy IDs must restart at 1 for each interface pair.",
+        "The policy ID overrides sequence view."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: The policy ID remains an identifier when the policy is moved."
+    },
+    {
+      "question": "Which inspection mode buffers and reconstructs traffic more extensively?",
+      "options": [
+        "Flow-based",
+        "Proxy-based",
+        "NAT mode",
+        "Transparent mode"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Proxy-based"
+    },
+    {
+      "question": "Why might proxy-based inspection options not be displayed on a low-end FortiGate?",
+      "options": [
+        "Models with 2 GB RAM or less can hide or restrict proxy-based features.",
+        "A default route is missing.",
+        "Strict RPF disables proxy mode.",
+        "FortiAnalyzer is in Analyzer mode."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Models with 2 GB RAM or less can hide or restrict proxy-based features."
+    },
+    {
+      "question": "Which SNAT option normally uses the outgoing interface address with PAT?",
+      "options": [
+        "Virtual IP",
+        "Use Outgoing Interface Address",
+        "Local-in NAT",
+        "Policy route"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Use Outgoing Interface Address"
+    },
+    {
+      "question": "What is the default dynamic IP pool type?",
+      "options": [
+        "One-to-one",
+        "Overload",
+        "Fixed port range",
+        "Port block allocation"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Overload"
+    },
+    {
+      "question": "What does the Fixed Port option do for SNAT?",
+      "options": [
+        "Preserves the original source port.",
+        "Preserves the original destination IP.",
+        "Disables source NAT.",
+        "Automatically creates a VIP."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Preserves the original source port."
+    },
+    {
+      "question": "What is required for a VIP to perform inbound DNAT?",
+      "options": [
+        "A matching firewall policy references the VIP as the destination.",
+        "A local-in policy references the VIP as the source.",
+        "The VIP is installed as a static route.",
+        "HA override is enabled."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: A matching firewall policy references the VIP as the destination."
+    },
+    {
+      "question": "Under the required conditions, what can a static one-to-one VIP without port forwarding do for outbound traffic from its mapped server?",
+      "options": [
+        "Use the VIP external address for SNAT.",
+        "Block all outbound traffic.",
+        "Permit only UDP traffic.",
+        "Change the static-route priority."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Use the VIP external address for SNAT."
+    },
+    {
+      "question": "What can happen when match-vip is enabled on a deny policy with destination all?",
+      "options": [
+        "Traffic addressed to external VIP addresses can also match the deny policy.",
+        "VIP traffic always bypasses the deny policy.",
+        "The policy becomes a local-in policy.",
+        "ARP reply is disabled."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Traffic addressed to external VIP addresses can also match the deny policy."
+    },
+    {
+      "question": "Why is ARP reply normally enabled for VIPs and IP pools?",
+      "options": [
+        "So FortiGate can answer ARP requests for external NAT addresses when required by the upstream network.",
+        "To replace DNS resolution.",
+        "To disable RPF.",
+        "To decrypt TLS traffic."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: So FortiGate can answer ARP requests for external NAT addresses when required by the upstream network."
+    },
+    {
+      "question": "Which criterion is evaluated first during route selection?",
+      "options": [
+        "Lowest metric regardless of prefix",
+        "Longest prefix match",
+        "Highest priority value",
+        "Highest administrative distance"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Longest prefix match"
+    },
+    {
+      "question": "What is the FortiGate FIB?",
+      "options": [
+        "A database containing every candidate route",
+        "The forwarding table used to route packets",
+        "The BGP table only",
+        "The firewall policy database"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: The forwarding table used to route packets"
+    },
+    {
+      "question": "Two static routes have the same prefix and administrative distance. Which route is preferred?",
+      "options": [
+        "The route with the highest priority value",
+        "The route with the lowest priority value",
+        "The route with the highest policy ID",
+        "The route learned most recently"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: The route with the lowest priority value"
+    },
+    {
+      "question": "What does administrative distance compare?",
+      "options": [
+        "Competing routes to the same destination",
+        "Interface speeds only",
+        "SSL certificate validity",
+        "HA heartbeat latency"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Competing routes to the same destination"
+    },
+    {
+      "question": "Which table can contain inactive or standby route candidates that are not installed as active forwarding routes?",
+      "options": [
+        "FIB only",
+        "Routing table database",
+        "Session table",
+        "ARP table"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Routing table database"
+    },
+    {
+      "question": "When does FortiGate perform a reverse path forwarding (RPF) check?",
+      "options": [
+        "On every packet",
+        "On the first packet of a new session",
+        "Only on reply packets",
+        "Only for DNAT sessions"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: On the first packet of a new session"
+    },
+    {
+      "question": "What does feasible-path RPF require?",
+      "options": [
+        "The best route to the source must use the incoming interface.",
+        "A possible route to the source must use the incoming interface.",
+        "There must be no route to the source.",
+        "Only a default route may exist."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: A possible route to the source must use the incoming interface."
+    },
+    {
+      "question": "What does strict RPF require?",
+      "options": [
+        "Any route to the source may use the incoming interface.",
+        "The best route to the source must use the incoming interface.",
+        "ECMP must be disabled.",
+        "A VIP must exist for the source."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: The best route to the source must use the incoming interface."
+    },
+    {
+      "question": "Which ECMP load-balancing method is the default when SD-WAN is disabled?",
+      "options": [
+        "Volume-based",
+        "Source IP",
+        "Spillover",
+        "Random"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Source IP"
+    },
+    {
+      "question": "Which load-balancing method is available with SD-WAN but not with v4-ecmp-mode when SD-WAN is disabled?",
+      "options": [
+        "Source IP",
+        "Source-destination IP",
+        "Volume-based",
+        "Spillover"
+      ],
+      "answer": 2,
+      "explanation": "Correct answer: Volume-based"
+    },
+    {
+      "question": "Which protocol provides encrypted LDAP authentication on the standard secure port?",
+      "options": [
+        "LDAP over TCP/389 without TLS",
+        "LDAPS over TCP/636",
+        "IKE over UDP/500",
+        "SMB over TCP/445"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: LDAPS over TCP/636"
+    },
+    {
+      "question": "Which RADIUS response can request an additional authentication step, such as a second factor?",
+      "options": [
+        "Access-Reject",
+        "Access-Challenge",
+        "ICMP Redirect",
+        "IKE_AUTH"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Access-Challenge"
+    },
+    {
+      "question": "An identity-based policy is followed by a more general policy that does not require authentication. What can happen before the user authenticates?",
+      "options": [
+        "The general policy can match and permit traffic without displaying an authentication prompt.",
+        "FortiGate always reboots.",
+        "RADIUS is converted to local authentication.",
+        "Deep inspection is automatically enabled."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: The general policy can match and permit traffic without displaying an authentication prompt."
+    },
+    {
+      "question": "Which service may be allowed before successful active firewall authentication, provided it is included in the authentication policy?",
+      "options": [
+        "SMB",
+        "DNS",
+        "SSH",
+        "ESP"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: DNS"
+    },
+    {
+      "question": "Which authentication timeout is an absolute timer that starts when the user authenticates?",
+      "options": [
+        "Idle timeout",
+        "Hard timeout",
+        "New-session timeout",
+        "ARP timeout"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Hard timeout"
+    },
+    {
+      "question": "Which FSSO architecture is generally the most scalable?",
+      "options": [
+        "Agentless polling by FortiGate",
+        "DC Agent with Collector Agent",
+        "RSSO only",
+        "Local users"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: DC Agent with Collector Agent"
+    },
+    {
+      "question": "Which default port does the FSSO Collector Agent use to communicate with FortiGate?",
+      "options": [
+        "TCP/8000",
+        "UDP/8002",
+        "TCP/636",
+        "UDP/514"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: TCP/8000"
+    },
+    {
+      "question": "Which default port does the FSSO DC Agent use to send events to the Collector Agent?",
+      "options": [
+        "TCP/8000",
+        "UDP/8002",
+        "TCP/445",
+        "UDP/1812"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: UDP/8002"
+    },
+    {
+      "question": "Which Collector Agent polling method is generally recommended?",
+      "options": [
+        "WMI",
+        "NetAPI",
+        "SNMP",
+        "Syslog"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: WMI"
+    },
+    {
+      "question": "Which Windows function is used by FSSO NetAPI polling to track sessions and logouts?",
+      "options": [
+        "NetSessionEnum",
+        "GetUserToken",
+        "IKE_SA_INIT",
+        "ARPEnum"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: NetSessionEnum"
+    },
+    {
+      "question": "Why is accurate DNS important for FSSO?",
+      "options": [
+        "Logon events can provide a workstation name that must be resolved to the current client IP address.",
+        "FSSO authenticates users only through DNS.",
+        "DNS determines HA priority.",
+        "DNS replaces LDAP group membership."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Logon events can provide a workstation name that must be resolved to the current client IP address."
+    },
+    {
+      "question": "What is the purpose of the FSSO Ignore User List?",
+      "options": [
+        "Prevent service accounts from overwriting mappings for interactive users.",
+        "Prevent FortiGate from learning routes.",
+        "Disable SSL inspection.",
+        "Prevent all users from logging out."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Prevent service accounts from overwriting mappings for interactive users."
+    },
+    {
+      "question": "Which three items are part of server certificate validation? (Choose three.)",
+      "options": [
+        "Issuer and trust chain",
+        "Validity period",
+        "Certificate signature",
+        "SD-WAN cost"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Correct answers: Issuer and trust chain; Validity period; Certificate signature"
+    },
+    {
+      "question": "What cannot be achieved with certificate inspection alone?",
+      "options": [
+        "Read SNI",
+        "Inspect CN/SAN fields",
+        "Perform full antivirus inspection of the encrypted payload",
+        "Support website categorization"
+      ],
+      "answer": 2,
+      "explanation": "Correct answer: Perform full antivirus inspection of the encrypted payload"
+    },
+    {
+      "question": "After enabling deep SSL inspection, browsers show certificate warnings on all HTTPS websites. What is the most likely cause?",
+      "options": [
+        "Clients do not trust the FortiGate inspection CA.",
+        "Strict RPF is enabled.",
+        "DPD is disabled.",
+        "DNS uses TCP."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Clients do not trust the FortiGate inspection CA."
+    },
+    {
+      "question": "Server Certificate SNI Check is set to Strict. What happens when SNI does not match the certificate CN or SAN?",
+      "options": [
+        "FortiGate only logs the mismatch.",
+        "FortiGate closes the connection.",
+        "FortiGate falls back to HTTP.",
+        "FortiGate skips certificate validation."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: FortiGate closes the connection."
+    },
+    {
+      "question": "Why can certificate pinning require an SSL inspection exemption?",
+      "options": [
+        "The application rejects the substitute certificate generated during deep inspection.",
+        "The route is too specific.",
+        "NAT-T is unavailable.",
+        "The administrator timeout is too low."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: The application rejects the substitute certificate generated during deep inspection."
+    },
+    {
+      "question": "Which antivirus inspection mode uses a hybrid scanning approach optimized for performance?",
+      "options": [
+        "Flow-based",
+        "Proxy-based",
+        "Transparent",
+        "Collector"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Flow-based"
+    },
+    {
+      "question": "Which security feature is primarily associated with proxy-based content processing?",
+      "options": [
+        "Content Disarm and Reconstruction (CDR)",
+        "ECMP",
+        "RPF",
+        "DPD"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Content Disarm and Reconstruction (CDR)"
+    },
+    {
+      "question": "HTTPS malware is not detected even though an antivirus profile is applied to the policy. What should you verify first?",
+      "options": [
+        "SSL inspection and security-profile assignment",
+        "HA serial number",
+        "Administrator trusted hosts",
+        "SD-WAN zone name"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: SSL inspection and security-profile assignment"
+    },
+    {
+      "question": "Which web-filter action allows traffic and generates a web-filter security log?",
+      "options": [
+        "Allow",
+        "Monitor",
+        "Exempt",
+        "Disable"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Monitor"
+    },
+    {
+      "question": "Which static URL filter action bypasses further security inspection?",
+      "options": [
+        "Block",
+        "Warning",
+        "Exempt",
+        "Authenticate"
+      ],
+      "answer": 2,
+      "explanation": "Correct answer: Exempt"
+    },
+    {
+      "question": "Which web-filter processing order is correct?",
+      "options": [
+        "FortiGuard categories, static URL filter, advanced filters",
+        "Static URL filter, FortiGuard category filtering, advanced filters",
+        "Advanced filters, static URL filter, categories",
+        "Only category filtering is evaluated"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Static URL filter, FortiGuard category filtering, advanced filters"
+    },
+    {
+      "question": "A web filter profile that uses daily category usage quota is not available in a flow-based firewall policy. Why?",
+      "options": [
+        "The profile contains a proxy-based feature that does not match the policy inspection mode.",
+        "DNS is too fast.",
+        "The policy ID is too high.",
+        "DPD is On Demand."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: The profile contains a proxy-based feature that does not match the policy inspection mode."
+    },
+    {
+      "question": "What are the two primary building blocks of an IPS sensor?",
+      "options": [
+        "Filters and signatures",
+        "Routes and VIPs",
+        "Users and tokens",
+        "Zones and SLAs"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Filters and signatures"
+    },
+    {
+      "question": "Which IPS configuration is used to trigger an action after a signature reaches a threshold within a configured period?",
+      "options": [
+        "rate-mode periodical",
+        "policy route",
+        "match-vip",
+        "session pickup"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: rate-mode periodical"
+    },
+    {
+      "question": "An IPS sensor exists but no firewall policy references it. What is the result?",
+      "options": [
+        "The sensor automatically inspects local-in traffic.",
+        "The sensor does not inspect production traffic until it is applied to a relevant policy.",
+        "The sensor becomes global.",
+        "Only IPS logging stops."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: The sensor does not inspect production traffic until it is applied to a relevant policy."
+    },
+    {
+      "question": "Which IPS action actively terminates a detected TCP session?",
+      "options": [
+        "Monitor",
+        "Reset",
+        "Allow",
+        "Exempt"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Reset"
+    },
+    {
+      "question": "Which Application Control entries are evaluated before category actions?",
+      "options": [
+        "Application and Filter Overrides",
+        "Static routes",
+        "Local users",
+        "IP pools"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Application and Filter Overrides"
+    },
+    {
+      "question": "A broad Excessive-Bandwidth override is placed above a specific Google override. What can happen?",
+      "options": [
+        "Google traffic can match the broader override first.",
+        "Google ignores all overrides.",
+        "The policy becomes a local-in policy.",
+        "FortiAnalyzer stops receiving logs."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Google traffic can match the broader override first."
+    },
+    {
+      "question": "Which statement about Application Control is correct?",
+      "options": [
+        "It identifies applications only by port number.",
+        "It uses the IPS engine and application signatures/behavior.",
+        "It works only in proxy mode.",
+        "It replaces firewall policies."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: It uses the IPS engine and application signatures/behavior."
+    },
+    {
+      "question": "What is required for maximum Application Control visibility into HTTPS payloads?",
+      "options": [
+        "Deep SSL inspection",
+        "Certificate inspection only",
+        "ARP reply",
+        "HA override"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Deep SSL inspection"
+    },
+    {
+      "question": "Which IPsec transport mapping is correct?",
+      "options": [
+        "IKE UDP/500, NAT-T UDP/4500, ESP IP protocol 50",
+        "IKE TCP/443, NAT-T UDP/500, ESP 51",
+        "IKE UDP/53, NAT-T TCP/4500, ESP 47",
+        "IKE TCP/22, NAT-T UDP/514, ESP 6"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: IKE UDP/500, NAT-T UDP/4500, ESP IP protocol 50"
+    },
+    {
+      "question": "What is the purpose of IPsec Phase 1?",
+      "options": [
+        "Create the protected IKE control channel and authenticate peers.",
+        "Install web-filter categories.",
+        "Create a VIP.",
+        "Elect the HA primary."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Create the protected IKE control channel and authenticate peers."
+    },
+    {
+      "question": "What do IPsec Phase 2 selectors define?",
+      "options": [
+        "The encryption domain for protected user traffic",
+        "Administrator trusted hosts",
+        "FortiAnalyzer transport",
+        "HA heartbeat addresses"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: The encryption domain for protected user traffic"
+    },
+    {
+      "question": "When does IKE normally move to UDP/4500?",
+      "options": [
+        "When NAT is detected and NAT-T is used.",
+        "When strict RPF is enabled.",
+        "When FSSO fails.",
+        "When reliable logging is enabled."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: When NAT is detected and NAT-T is used."
+    },
+    {
+      "question": "Which DPD mode is the FortiGate default?",
+      "options": [
+        "On Idle",
+        "On Demand",
+        "Disabled",
+        "Strict"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: On Demand"
+    },
+    {
+      "question": "With add-route enabled on a dial-up IPsec VPN, when is the route dynamically installed?",
+      "options": [
+        "As soon as Phase 1 is saved.",
+        "When Phase 2 is established with the correct remote selector.",
+        "Only after a reboot.",
+        "Only when BGP is enabled."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: When Phase 2 is established with the correct remote selector."
+    },
+    {
+      "question": "Phase 1 is established, but IPsec user traffic fails. Which two areas should be checked first? (Choose two.)",
+      "options": [
+        "Phase 2 selectors and SAs",
+        "Routes and firewall policies",
+        "Administrator idle timeout",
+        "FortiAnalyzer mode"
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "Correct answers: Phase 2 selectors and SAs; Routes and firewall policies"
+    },
+    {
+      "question": "Which three SD-WAN rule strategies are valid? (Choose three.)",
+      "options": [
+        "Manual",
+        "Best Quality",
+        "Lowest Cost (SLA)",
+        "Lowest Quality"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Correct answers: Manual; Best Quality; Lowest Cost (SLA)"
+    },
+    {
+      "question": "Which three metrics can a Performance SLA measure?",
+      "options": [
+        "Packet loss, latency, and jitter",
+        "CPU, memory, and disk",
+        "CN, SAN, and SNI",
+        "Distance, metric, and priority"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Packet loss, latency, and jitter"
+    },
+    {
+      "question": "What is the default active Performance SLA probe interval, approximately?",
+      "options": [
+        "50 ms",
+        "500 ms",
+        "5 seconds",
+        "60 seconds"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: 500 ms"
+    },
+    {
+      "question": "Which two conditions must a candidate SD-WAN member satisfy? (Choose two.)",
+      "options": [
+        "The member is alive.",
+        "A valid route to the destination exists through the member.",
+        "The firewall policy ID is below 10.",
+        "HA override is enabled."
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "Correct answers: The member is alive.; A valid route to the destination exists through the member."
+    },
+    {
+      "question": "Does an SD-WAN rule permit traffic by itself?",
+      "options": [
+        "Yes, no firewall policy is required.",
+        "No, a firewall policy is still required.",
+        "Only for HTTP traffic.",
+        "Only in transparent mode."
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: No, a firewall policy is still required."
+    },
+    {
+      "question": "A Best Quality SD-WAN rule has two alive members. What determines which member is preferred?",
+      "options": [
+        "The configured quality criteria and measured SLA values",
+        "The lowest firewall policy ID",
+        "The HA serial number",
+        "The administrator idle timeout"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: The configured quality criteria and measured SLA values"
+    },
+    {
+      "question": "What is the primary election order when HA override is disabled?",
+      "options": [
+        "Connected monitored ports > HA uptime > priority > serial number",
+        "Priority > serial number > HA uptime > ports",
+        "Serial number > priority > ports > HA uptime",
+        "HA uptime > serial number > ports > priority"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Connected monitored ports > HA uptime > priority > serial number"
+    },
+    {
+      "question": "What changes in the primary election when HA override is enabled?",
+      "options": [
+        "Priority is evaluated before HA uptime.",
+        "Serial number is evaluated before monitored ports.",
+        "HA uptime is completely ignored.",
+        "Heartbeat is disabled."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Priority is evaluated before HA uptime."
+    },
+    {
+      "question": "Which HA setting is not automatically synchronized between cluster members?",
+      "options": [
+        "HA priority",
+        "FIB entries",
+        "ARP table",
+        "DHCP leases"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: HA priority"
+    },
+    {
+      "question": "Which statement about HA heartbeat IP addresses is correct?",
+      "options": [
+        "They can change when a member joins or leaves the cluster.",
+        "The primary always permanently owns 169.254.0.1.",
+        "They are configured as normal LAN addresses.",
+        "They are external VIP addresses."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: They can change when a member joins or leaves the cluster."
+    },
+    {
+      "question": "Why are two heartbeat interfaces recommended for an HA cluster?",
+      "options": [
+        "To provide redundant cluster communication paths.",
+        "To double NAT capacity.",
+        "To download two web-filter databases.",
+        "To reduce the administrator timeout."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: To provide redundant cluster communication paths."
+    },
+    {
+      "question": "Which command captures packets and includes interface information with verbosity 4?",
+      "options": [
+        "diagnose sniffer packet any <filter> 4",
+        "get system status 4",
+        "execute ping 4",
+        "diagnose sys top 4"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: diagnose sniffer packet any <filter> 4"
+    },
+    {
+      "question": "Which diagnostic tool shows session creation, route lookup, firewall-policy matching, NAT, and drop reasons?",
+      "options": [
+        "Debug flow",
+        "Traceroute only",
+        "FortiView map",
+        "ARP reply"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Debug flow"
+    },
+    {
+      "question": "When does FortiGate enter conserve mode?",
+      "options": [
+        "When memory usage crosses the red threshold.",
+        "After every IPS detection.",
+        "When UDP/514 is used.",
+        "After every HA failover."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: When memory usage crosses the red threshold."
+    },
+    {
+      "question": "What can happen when memory usage reaches the extreme threshold?",
+      "options": [
+        "New sessions can be dropped.",
+        "All routes become BGP routes.",
+        "SNI checking is disabled.",
+        "DPD changes to On Idle."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: New sessions can be dropped."
+    },
+    {
+      "question": "Why should existing sessions be considered when testing a firewall-policy change?",
+      "options": [
+        "Existing sessions can continue using previously determined policy, route, and NAT state.",
+        "Every policy change automatically clears all sessions.",
+        "Sessions determine DNS zones.",
+        "Policies require a reboot before becoming active."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Existing sessions can continue using previously determined policy, route, and NAT state."
+    },
+    {
+      "question": "Which AWS setting must be disabled on an ENI used by FortiGate to route traffic for other instances?",
+      "options": [
+        "Source/destination check",
+        "Elastic IP",
+        "Security Group logging",
+        "Availability Zone"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Source/destination check"
+    },
+    {
+      "question": "Which AWS object connects a customer VPC traffic path to a Gateway Load Balancer?",
+      "options": [
+        "Gateway Load Balancer endpoint (GWLBe)",
+        "FortiToken",
+        "VIP port forward",
+        "FSSO Collector"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Gateway Load Balancer endpoint (GWLBe)"
+    },
+    {
+      "question": "For routes with the same prefix length in Azure, what is the route-source preference?",
+      "options": [
+        "System route > BGP > UDR",
+        "UDR > BGP > system route",
+        "BGP > system route > UDR",
+        "Highest metric first"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: UDR > BGP > system route"
+    },
+    {
+      "question": "Which route-selection rule is evaluated before Azure route-source preference?",
+      "options": [
+        "Longest prefix match",
+        "Highest NSG priority number",
+        "HA uptime",
+        "Lowest Cost SLA"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Longest prefix match"
+    },
+    {
+      "question": "Which FortiSASE use case protects remote-user Internet access?",
+      "options": [
+        "Secure Internet Access (SIA)",
+        "Secure Private Access (SPA)",
+        "Secure SaaS Access only",
+        "High Availability"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Secure Internet Access (SIA)"
+    },
+    {
+      "question": "How does FortiExtender connect to FortiSASE for site-based remote Internet access?",
+      "options": [
+        "VXLAN over IPsec",
+        "GRE over HTTP",
+        "PAC over SNMP",
+        "ESP without a tunnel"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: VXLAN over IPsec"
+    },
+    {
+      "question": "What is normally used to direct web traffic to FortiSASE in an agentless explicit web-proxy deployment?",
+      "options": [
+        "A PAC file",
+        "An FSSO DC Agent",
+        "VIP ARP reply",
+        "DPD"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: A PAC file"
+    },
+    {
+      "question": "Which FortiSASE use case provides access to private applications?",
+      "options": [
+        "Secure Private Access (SPA)",
+        "Secure Internet Access (SIA)",
+        "Secure SaaS Access only",
+        "Collector mode"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Secure Private Access (SPA)"
+    },
+    {
+      "question": "An HTTPS application works with certificate inspection, but IPS does not detect a payload exploit. What is most likely missing?",
+      "options": [
+        "Deep SSL inspection",
+        "HA override",
+        "Port block allocation",
+        "Collector mode"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Deep SSL inspection"
+    },
+    {
+      "question": "A user never receives an authentication prompt even though an identity policy is above a general Internet policy. What is the most likely explanation?",
+      "options": [
+        "The more general policy matches after authentication fall-through.",
+        "ESP uses IP protocol 50.",
+        "ARP reply is enabled.",
+        "FortiAnalyzer uses TCP."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: The more general policy matches after authentication fall-through."
+    }
+  ]
+}

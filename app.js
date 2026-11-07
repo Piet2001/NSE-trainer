@@ -61,8 +61,11 @@ function updateDescription() {
 async function startExam() {
   $('error').hidden = true;
   try {
-    const data = await loadJson(currentExam().file);
-    questions = $('shuffle').checked ? shuffle(data.questions) : data.questions;
+    const exam = currentExam();
+    const files = [].concat(exam.files ?? exam.file);
+    const parts = await Promise.all(files.map(loadJson));
+    const all = parts.flatMap((p) => p.questions);
+    questions = $('shuffle').checked ? shuffle(all) : all;
   } catch (e) {
     showError(e.message);
     return;
@@ -86,15 +89,76 @@ function renderQuestion() {
   $('feedback').textContent = '';
   $('feedback').className = '';
   $('next').hidden = true;
+  $('check').hidden = true;
+
+  const images = $('images');
+  images.innerHTML = '';
+  (q.images ?? []).forEach((src) => {
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = 'Exhibit';
+    images.appendChild(img);
+  });
+
+  const multi = isMulti(q);
+  if (multi) {
+    if (!/kies|choose/i.test(q.question)) $('question').textContent += ` (Kies ${q.answer.length}.)`;
+    $('check').hidden = false;
+    $('check').disabled = true;
+  }
 
   const container = $('options');
   container.innerHTML = '';
   q.options.forEach((option, i) => {
     const button = document.createElement('button');
     button.textContent = option;
-    button.addEventListener('click', () => choose(i, button));
+    button.addEventListener('click', () => (multi ? toggle(button) : choose(i, button)));
+    button.dataset.index = i;
     container.appendChild(button);
   });
+}
+
+function isMulti(q) {
+  return Array.isArray(q.answer);
+}
+
+function toggle(button) {
+  if (answered) return;
+  button.classList.toggle('selected');
+  $('check').disabled = !document.querySelector('#options button.selected');
+}
+
+function finishCorrect(q) {
+  answered = true;
+  document.querySelectorAll('#options button').forEach((b) => { b.disabled = true; });
+  $('check').hidden = true;
+  $('feedback').className = 'ok';
+  $('feedback').textContent = '✔ Goed!' + (q.explanation ? ` ${q.explanation}` : '');
+  $('next').textContent = index === questions.length - 1 ? 'Afronden' : 'Volgende';
+  $('next').hidden = false;
+  $('next').focus();
+}
+
+function checkMulti() {
+  if (answered) return;
+  const q = questions[index];
+  const buttons = [...document.querySelectorAll('#options button')];
+  const selected = buttons.filter((b) => b.classList.contains('selected')).map((b) => Number(b.dataset.index));
+  const correct = selected.length === q.answer.length && selected.every((i) => q.answer.includes(i));
+
+  if (correct) {
+    buttons.forEach((b) => {
+      b.classList.remove('selected');
+      if (selected.includes(Number(b.dataset.index))) b.classList.add('correct');
+    });
+    finishCorrect(q);
+  } else {
+    mistakes++;
+    buttons.forEach((b) => b.classList.remove('selected'));
+    $('check').disabled = true;
+    $('feedback').className = 'no';
+    $('feedback').textContent = '✘ Fout, probeer het opnieuw.';
+  }
 }
 
 function choose(i, button) {
@@ -103,14 +167,8 @@ function choose(i, button) {
   const feedback = $('feedback');
 
   if (i === q.answer) {
-    answered = true;
     button.classList.add('correct');
-    document.querySelectorAll('#options button').forEach((b) => { b.disabled = true; });
-    feedback.className = 'ok';
-    feedback.textContent = '✔ Goed!' + (q.explanation ? ` ${q.explanation}` : '');
-    $('next').textContent = index === questions.length - 1 ? 'Afronden' : 'Volgende';
-    $('next').hidden = false;
-    $('next').focus();
+    finishCorrect(q);
   } else {
     mistakes++;
     button.classList.add('wrong');
@@ -135,6 +193,7 @@ function next() {
 $('exam-select').addEventListener('change', updateDescription);
 $('start').addEventListener('click', startExam);
 $('next').addEventListener('click', next);
+$('check').addEventListener('click', checkMulti);
 $('restart').addEventListener('click', startExam);
 $('back').addEventListener('click', () => show('select-view'));
 

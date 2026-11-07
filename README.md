@@ -1,4 +1,4 @@
-# NSE-trainer
+﻿# NSE-trainer
 
 Een eenvoudige webapp om oefenvragen te maken voor meerdere examens. Draait volledig statisch, dus geschikt voor GitHub Pages.
 
@@ -24,29 +24,60 @@ python -m http.server 8000
 
 ## Vragen en examens toevoegen
 
-Alle stof staat in [data/](data):
+Alle stof staat in [data/](data). Er is geen code-aanpassing nodig.
 
-1. Maak een bestand aan, bijvoorbeeld `data/mijn-examen.json`:
+### Stap 1: vragenbestand maken
 
-   ```json
-   {
-     "questions": [
-       {
-         "question": "Vraagtekst?",
-         "options": ["A", "B", "C"],
-         "answer": 1,
-         "explanation": "Optionele uitleg bij een goed antwoord."
-       }
-     ]
-   }
-   ```
+Maak `data/mijn-examen.json`:
 
-   `answer` is de index (beginnend bij 0) van het juiste antwoord in `options`.
+```json
+{
+  "questions": [
+    {
+      "question": "Vraag met één goed antwoord?",
+      "options": ["A", "B", "C"],
+      "answer": 1,
+      "explanation": "Optionele uitleg na een goed antwoord."
+    },
+    {
+      "question": "Welke twee kloppen? (Choose two.)",
+      "options": ["A", "B", "C", "D"],
+      "answer": [0, 2]
+    },
+    {
+      "question": "Vraag met exhibit?",
+      "options": ["A", "B"],
+      "answer": 0,
+      "images": ["data/img/exhibit.png"]
+    }
+  ]
+}
+```
 
-2. Registreer het examen in `data/exams.json`:
+| Veld | Verplicht | Uitleg |
+|------|-----------|--------|
+| `question` | ja | Vraagtekst |
+| `options` | ja | Lijst met antwoordopties |
+| `answer` | ja | Index (start bij 0) van het juiste antwoord, of een lijst zoals `[0, 2]` bij meerdere goede antwoorden |
+| `explanation` | nee | Uitleg die bij een goed antwoord getoond wordt |
+| `images` | nee | Lijst met afbeeldingspaden (exhibits) |
 
-   ```json
-   { "title": "Mijn examen", "description": "Korte omschrijving", "file": "data/mijn-examen.json" }
-   ```
+Bij meerdere antwoorden selecteert de gebruiker alle opties en klikt op *Controleer*.
 
-Meer vragen toevoegen aan een bestaand examen kan door een object aan `questions` toe te voegen. Er is geen code-aanpassing nodig.
+### Stap 2: examen registreren
+
+Voeg een item toe aan `data/exams.json`:
+
+```json
+{ "title": "Mijn examen", "description": "Korte omschrijving", "file": "data/mijn-examen.json" }
+```
+
+Een examen uit meerdere bestanden (bijvoorbeeld NL + EN) gebruikt `files`:
+
+```json
+{ "title": "Mijn examen", "description": "...", "files": ["data/a.json", "data/b.json"] }
+```
+
+### Meer vragen aan een bestaand examen
+
+Voeg een object toe aan `questions` in het bestaande bestand, of voeg een nieuw bestand toe aan `files`.

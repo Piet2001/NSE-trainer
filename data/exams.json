@@ -3,5 +3,10 @@
     "title": "Voorbeeldexamen",
     "description": "Een paar voorbeeldvragen om de trainer te testen.",
     "file": "data/voorbeeld.json"
+  },
+  {
+    "title": "FortiOS 7.6 Administrator",
+    "description": "Fortinet NSE4 FortiOS 7.6 Administrator.",
+    "files": [ "data/fortios-7-6-100.json", "data/oefenvragen-internet.json", "data/FortiOS_7.6_Practice_Exam_100.json" ]
   }
 ]
