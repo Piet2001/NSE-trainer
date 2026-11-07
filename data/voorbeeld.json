@@ -1,0 +1,20 @@
+{
+  "questions": [
+    {
+      "question": "Wat is de hoofdstad van Nederland?",
+      "options": ["Rotterdam", "Amsterdam", "Den Haag", "Utrecht"],
+      "answer": 1,
+      "explanation": "Amsterdam is de hoofdstad; Den Haag is de zetel van de regering."
+    },
+    {
+      "question": "Wat is 7 × 8?",
+      "options": ["54", "56", "64"],
+      "answer": 1
+    },
+    {
+      "question": "Welke taal wordt gebruikt om webpagina's interactief te maken?",
+      "options": ["JavaScript", "SQL", "C++"],
+      "answer": 0
+    }
+  ]
+}

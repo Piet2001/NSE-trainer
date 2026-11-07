@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSE-trainer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>NSE-trainer</h1>
+
+    <section id="select-view">
+      <label for="exam-select">Kies een examen</label>
+      <select id="exam-select"></select>
+      <p id="exam-description"></p>
+      <label class="check"><input type="checkbox" id="shuffle" checked> Willekeurige volgorde</label>
+      <button id="start" class="primary">Start</button>
+    </section>
+
+    <section id="quiz-view" hidden>
+      <div class="progress"><div id="progress-bar"></div></div>
+      <p id="counter"></p>
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <p id="feedback" role="status"></p>
+      <button id="next" class="primary" hidden>Volgende</button>
+    </section>
+
+    <section id="result-view" hidden>
+      <h2>Klaar!</h2>
+      <p id="result-text"></p>
+      <button id="restart" class="primary">Opnieuw</button>
+      <button id="back">Ander examen</button>
+    </section>
+
+    <p id="error" hidden></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
