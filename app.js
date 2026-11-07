@@ -57,25 +57,30 @@ function currentExam() {
   return exams[Number($('exam-select').value)];
 }
 
-const questionCache = new Map();
+const fileCache = new Map();
 
-async function loadExamQuestions(exam) {
-  if (!questionCache.has(exam)) {
-    const files = [].concat(exam.files ?? exam.file);
-    const parts = await Promise.all(files.map(loadJson));
-    questionCache.set(exam, parts.flatMap((p) => p.questions));
-  }
-  return questionCache.get(exam);
+function examFiles(exam) {
+  return [].concat(exam.files ?? exam.file);
 }
 
-async function updateDescription() {
-  const exam = currentExam();
-  $('exam-description').textContent = exam?.description ?? '';
-  if (!exam) return;
+async function loadFileQuestions(file) {
+  if (!fileCache.has(file)) fileCache.set(file, (await loadJson(file)).questions);
+  return fileCache.get(file);
+}
+
+function selectedFiles() {
+  return [...document.querySelectorAll('#file-select input:checked')].map((c) => c.value);
+}
+
+async function selectedQuestions() {
+  const parts = await Promise.all(selectedFiles().map(loadFileQuestions));
+  return parts.flat();
+}
+
+async function updateCount() {
   $('error').hidden = true;
   try {
-    const count = (await loadExamQuestions(exam)).length;
-    if (exam !== currentExam()) return;
+    const count = (await selectedQuestions()).length;
     $('count').max = count;
     $('count').value = count;
     $('count-max').textContent = `van ${count}`;
@@ -85,10 +90,32 @@ async function updateDescription() {
   }
 }
 
+async function updateDescription() {
+  const exam = currentExam();
+  $('exam-description').textContent = exam?.description ?? '';
+  if (!exam) return;
+  const files = examFiles(exam);
+  const box = $('file-select');
+  box.hidden = files.length < 2;
+  box.innerHTML = '<span class="label">Bronbestanden</span>';
+  files.forEach((file) => {
+    const label = document.createElement('label');
+    label.className = 'check';
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.value = file;
+    input.checked = true;
+    input.addEventListener('change', updateCount);
+    label.append(input, ` ${file.split('/').pop().replace(/\.json$/, '')}`);
+    box.appendChild(label);
+  });
+  await updateCount();
+}
+
 async function startExam() {
   $('error').hidden = true;
   try {
-    const all = await loadExamQuestions(currentExam());
+    const all = await selectedQuestions();
     const wanted = Math.round(Number($('count').value)) || all.length;
     const n = Math.min(Math.max(wanted, 1), all.length);
     $('count').value = n;
@@ -97,8 +124,7 @@ async function startExam() {
   } catch (e) {
     showError(e.message);
     return;
-  }
-  if (!questions.length) {
+  }  if (!questions.length) {
     showError('Dit examen bevat nog geen vragen.');
     return;
   }
