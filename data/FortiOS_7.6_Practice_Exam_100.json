@@ -1,318 +1,318 @@
 {
   "questions": [
     {
-      "question": "During a FortiOS 7.6 configuration review, an administrator must identify the 2 statements that are consistent with the documented behavior described below. Which 2 statements are correct? (Choose 2.)\n\nTopic under review: Which two settings directly reduce the FortiGate administrative attack surface? (Choose two.)",
+      "question": "Which two settings directly reduce the FortiGate administrative attack surface? (Choose two.)",
       "options": [
-        "Set all interface roles to Undefined.",
+        "Configure trusted hosts on administrator accounts.",
         "Enable HTTP administrative access on all interfaces.",
         "Enable only HTTPS and SSH on interfaces that require management access.",
-        "Configure trusted hosts on administrator accounts."
+        "Set all interface roles to Undefined."
       ],
       "answer": [
-        2,
-        3
+        0,
+        2
       ],
-      "explanation": "The correct selection is: Configure trusted hosts on administrator accounts.; Enable only HTTPS and SSH on interfaces that require management access. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answers: Configure trusted hosts on administrator accounts.; Enable only HTTPS and SSH on interfaces that require management access."
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhat is the default global administrator idle timeout on FortiGate?",
+      "question": "What is the default global administrator idle timeout on FortiGate?",
       "options": [
-        "15 minutes",
         "1 minute",
         "5 minutes",
-        "10 minutes"
-      ],
-      "answer": 2,
-      "explanation": "The correct selection is: 5 minutes This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
-    },
-    {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhich statement about FortiGate NAT mode is correct?",
-      "options": [
-        "Traffic interfaces do not require IP addresses.",
-        "Only the management interface has an IP address.",
-        "FortiGate forwards only according to destination MAC addresses.",
-        "Traffic interfaces have IP addresses and create connected routes."
-      ],
-      "answer": 3,
-      "explanation": "The correct selection is: Traffic interfaces have IP addresses and create connected routes. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
-    },
-    {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nLocal connected networks are reachable, but FortiGuard services are not. Which missing configuration is the most likely cause?",
-      "options": [
-        "A proxy-based inspection profile",
-        "A default route",
-        "A local-in policy for DNS",
-        "An HA override setting"
+        "10 minutes",
+        "15 minutes"
       ],
       "answer": 1,
-      "explanation": "The correct selection is: A default route This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: 5 minutes"
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhich transport indicates that reliable logging to FortiAnalyzer is enabled?",
+      "question": "Which statement about FortiGate NAT mode is correct?",
       "options": [
-        "ESP",
+        "Traffic interfaces do not require IP addresses.",
+        "FortiGate forwards only according to destination MAC addresses.",
+        "Traffic interfaces have IP addresses and create connected routes.",
+        "Only the management interface has an IP address."
+      ],
+      "answer": 2,
+      "explanation": "Correct answer: Traffic interfaces have IP addresses and create connected routes."
+    },
+    {
+      "question": "Local connected networks are reachable, but FortiGuard services are not. Which missing configuration is the most likely cause?",
+      "options": [
+        "A default route",
+        "An HA override setting",
+        "A proxy-based inspection profile",
+        "A local-in policy for DNS"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: A default route"
+    },
+    {
+      "question": "Which transport indicates that reliable logging to FortiAnalyzer is enabled?",
+      "options": [
         "UDP/514",
         "TCP",
-        "ICMP"
+        "ICMP",
+        "ESP"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: TCP This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: TCP"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich FortiAnalyzer mode provides SQL-based analysis, FortiView, event management, and reporting?",
+      "question": "Which FortiAnalyzer mode provides SQL-based analysis, FortiView, event management, and reporting?",
       "options": [
-        "Analyzer",
         "Collector",
-        "Passive",
-        "Sniffer"
+        "Analyzer",
+        "Sniffer",
+        "Passive"
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: Analyzer This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Analyzer"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nAn Application Control override is configured with action Allow. What is the normal logging behavior?",
+      "question": "An Application Control override is configured with action Allow. What is the normal logging behavior?",
       "options": [
-        "Only a start log is generated.",
         "The application is blocked and logged.",
+        "The application is allowed and a security log is always generated.",
         "The application is allowed without an Application Control security log.",
-        "The application is allowed and a security log is always generated."
+        "Only a start log is generated."
       ],
       "answer": 2,
-      "explanation": "The correct selection is: The application is allowed without an Application Control security log. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: The application is allowed without an Application Control security log."
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhich firewall-policy logging setting records traffic logs for all sessions, even when no security event occurs?",
+      "question": "Which firewall-policy logging setting records traffic logs for all sessions, even when no security event occurs?",
       "options": [
+        "Security Events",
         "All Sessions",
         "Local Traffic only",
-        "Security Events",
         "Implicit logging"
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: All Sessions This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: All Sessions"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhat happens to logs after FortiAnalyzer receives them?",
+      "question": "What happens to logs after FortiAnalyzer receives them?",
       "options": [
-        "They are deleted after parsing.",
-        "They are converted to DNS records.",
         "They are stored only in reports.",
-        "They are stored as raw/archive logs and then inserted into SQL for analysis."
+        "They are stored as raw/archive logs and then inserted into SQL for analysis.",
+        "They are deleted after parsing.",
+        "They are converted to DNS records."
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: They are stored as raw/archive logs and then inserted into SQL for analysis. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: They are stored as raw/archive logs and then inserted into SQL for analysis."
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nA packet capture shows UDP/514 from FortiGate to FortiAnalyzer. What does this indicate?",
+      "question": "A packet capture shows UDP/514 from FortiGate to FortiAnalyzer. What does this indicate?",
       "options": [
-        "The traffic is consistent with standard non-reliable logging.",
         "Reliable logging is enabled.",
+        "The traffic is consistent with standard non-reliable logging.",
         "SSL/OFTP is definitely enabled.",
         "FortiAnalyzer is operating in Collector mode."
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: The traffic is consistent with standard non-reliable logging. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: The traffic is consistent with standard non-reliable logging."
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nHow does FortiGate evaluate firewall policies?",
+      "question": "How does FortiGate evaluate firewall policies?",
       "options": [
-        "Randomly after route lookup",
-        "Top to bottom; the first complete match wins",
+        "Highest policy ID first",
         "Lowest policy ID first",
-        "Highest policy ID first"
+        "Top to bottom; the first complete match wins",
+        "Randomly after route lookup"
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: Top to bottom; the first complete match wins This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 2,
+      "explanation": "Correct answer: Top to bottom; the first complete match wins"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhich policy type controls HTTPS or SSH traffic destined to the FortiGate itself?",
+      "question": "Which policy type controls HTTPS or SSH traffic destined to the FortiGate itself?",
       "options": [
-        "Multicast policy",
         "Forward firewall policy",
+        "Local-in policy",
         "Central SNAT policy",
-        "Local-in policy"
-      ],
-      "answer": 3,
-      "explanation": "The correct selection is: Local-in policy This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
-    },
-    {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nHow are different firewall-policy criteria, such as incoming interface, source, destination, schedule, and service, logically combined?",
-      "options": [
-        "Only destination is evaluated",
-        "AND",
-        "OR",
-        "XOR"
+        "Multicast policy"
       ],
       "answer": 1,
-      "explanation": "The correct selection is: AND This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Local-in policy"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nA firewall policy contains three source address objects in the Source field. How are the objects evaluated within that field?",
+      "question": "How are different firewall-policy criteria, such as incoming interface, source, destination, schedule, and service, logically combined?",
       "options": [
-        "Only the first object is evaluated.",
+        "OR",
+        "XOR",
+        "AND",
+        "Only destination is evaluated"
+      ],
+      "answer": 2,
+      "explanation": "Correct answer: AND"
+    },
+    {
+      "question": "A firewall policy contains three source address objects in the Source field. How are the objects evaluated within that field?",
+      "options": [
         "All three must match.",
         "Any one of the three may match.",
+        "Only the first object is evaluated.",
         "The objects are ignored when NAT is enabled."
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: Any one of the three may match. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Any one of the three may match."
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhy can a firewall policy that uses an FQDN address object unexpectedly fail to match?",
+      "question": "Why can a firewall policy that uses an FQDN address object unexpectedly fail to match?",
       "options": [
-        "Proxy mode is disabled.",
-        "The policy ID is too high.",
         "FortiGate cannot resolve and cache the FQDN.",
-        "HA override is disabled."
+        "HA override is disabled.",
+        "The policy ID is too high.",
+        "Proxy mode is disabled."
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: FortiGate cannot resolve and cache the FQDN. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: FortiGate cannot resolve and cache the FQDN."
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich statement about firewall policy IDs is correct?",
+      "question": "Which statement about firewall policy IDs is correct?",
       "options": [
-        "Policy IDs must restart at 1 for each interface pair.",
-        "The policy ID overrides sequence view.",
         "The policy ID determines evaluation order.",
-        "The policy ID remains an identifier when the policy is moved."
+        "The policy ID remains an identifier when the policy is moved.",
+        "Policy IDs must restart at 1 for each interface pair.",
+        "The policy ID overrides sequence view."
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: The policy ID remains an identifier when the policy is moved. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: The policy ID remains an identifier when the policy is moved."
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhich inspection mode buffers and reconstructs traffic more extensively?",
+      "question": "Which inspection mode buffers and reconstructs traffic more extensively?",
       "options": [
-        "NAT mode",
-        "Transparent mode",
+        "Flow-based",
         "Proxy-based",
-        "Flow-based"
+        "NAT mode",
+        "Transparent mode"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: Proxy-based This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Proxy-based"
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhy might proxy-based inspection options not be displayed on a low-end FortiGate?",
+      "question": "Why might proxy-based inspection options not be displayed on a low-end FortiGate?",
       "options": [
+        "Models with 2 GB RAM or less can hide or restrict proxy-based features.",
         "A default route is missing.",
-        "FortiAnalyzer is in Analyzer mode.",
         "Strict RPF disables proxy mode.",
-        "Models with 2 GB RAM or less can hide or restrict proxy-based features."
+        "FortiAnalyzer is in Analyzer mode."
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: Models with 2 GB RAM or less can hide or restrict proxy-based features. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Models with 2 GB RAM or less can hide or restrict proxy-based features."
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhich SNAT option normally uses the outgoing interface address with PAT?",
+      "question": "Which SNAT option normally uses the outgoing interface address with PAT?",
       "options": [
-        "Local-in NAT",
-        "Policy route",
+        "Virtual IP",
         "Use Outgoing Interface Address",
-        "Virtual IP"
+        "Local-in NAT",
+        "Policy route"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: Use Outgoing Interface Address This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Use Outgoing Interface Address"
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhat is the default dynamic IP pool type?",
+      "question": "What is the default dynamic IP pool type?",
       "options": [
-        "Fixed port range",
         "One-to-one",
         "Overload",
+        "Fixed port range",
         "Port block allocation"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: Overload This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Overload"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhat does the Fixed Port option do for SNAT?",
+      "question": "What does the Fixed Port option do for SNAT?",
       "options": [
-        "Preserves the original destination IP.",
         "Preserves the original source port.",
+        "Preserves the original destination IP.",
         "Disables source NAT.",
         "Automatically creates a VIP."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: Preserves the original source port. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Preserves the original source port."
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhat is required for a VIP to perform inbound DNAT?",
+      "question": "What is required for a VIP to perform inbound DNAT?",
       "options": [
         "A matching firewall policy references the VIP as the destination.",
-        "HA override is enabled.",
         "A local-in policy references the VIP as the source.",
-        "The VIP is installed as a static route."
+        "The VIP is installed as a static route.",
+        "HA override is enabled."
       ],
       "answer": 0,
-      "explanation": "The correct selection is: A matching firewall policy references the VIP as the destination. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: A matching firewall policy references the VIP as the destination."
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nUnder the required conditions, what can a static one-to-one VIP without port forwarding do for outbound traffic from its mapped server?",
+      "question": "Under the required conditions, what can a static one-to-one VIP without port forwarding do for outbound traffic from its mapped server?",
       "options": [
         "Use the VIP external address for SNAT.",
         "Block all outbound traffic.",
-        "Change the static-route priority.",
-        "Permit only UDP traffic."
+        "Permit only UDP traffic.",
+        "Change the static-route priority."
       ],
       "answer": 0,
-      "explanation": "The correct selection is: Use the VIP external address for SNAT. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Use the VIP external address for SNAT."
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhat can happen when match-vip is enabled on a deny policy with destination all?",
+      "question": "What can happen when match-vip is enabled on a deny policy with destination all?",
       "options": [
+        "Traffic addressed to external VIP addresses can also match the deny policy.",
         "VIP traffic always bypasses the deny policy.",
         "The policy becomes a local-in policy.",
-        "ARP reply is disabled.",
-        "Traffic addressed to external VIP addresses can also match the deny policy."
+        "ARP reply is disabled."
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: Traffic addressed to external VIP addresses can also match the deny policy. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Traffic addressed to external VIP addresses can also match the deny policy."
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhy is ARP reply normally enabled for VIPs and IP pools?",
+      "question": "Why is ARP reply normally enabled for VIPs and IP pools?",
       "options": [
-        "To disable RPF.",
+        "So FortiGate can answer ARP requests for external NAT addresses when required by the upstream network.",
         "To replace DNS resolution.",
-        "To decrypt TLS traffic.",
-        "So FortiGate can answer ARP requests for external NAT addresses when required by the upstream network."
+        "To disable RPF.",
+        "To decrypt TLS traffic."
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: So FortiGate can answer ARP requests for external NAT addresses when required by the upstream network. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: So FortiGate can answer ARP requests for external NAT addresses when required by the upstream network."
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich criterion is evaluated first during route selection?",
+      "question": "Which criterion is evaluated first during route selection?",
       "options": [
-        "Highest priority value",
         "Lowest metric regardless of prefix",
         "Longest prefix match",
+        "Highest priority value",
         "Highest administrative distance"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: Longest prefix match This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Longest prefix match"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhat is the FortiGate FIB?",
+      "question": "What is the FortiGate FIB?",
       "options": [
-        "The firewall policy database",
+        "A database containing every candidate route",
         "The forwarding table used to route packets",
         "The BGP table only",
-        "A database containing every candidate route"
+        "The firewall policy database"
       ],
       "answer": 1,
-      "explanation": "The correct selection is: The forwarding table used to route packets This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: The forwarding table used to route packets"
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nTwo static routes have the same prefix and administrative distance. Which route is preferred?",
+      "question": "Two static routes have the same prefix and administrative distance. Which route is preferred?",
       "options": [
-        "The route learned most recently",
         "The route with the highest priority value",
         "The route with the lowest priority value",
-        "The route with the highest policy ID"
+        "The route with the highest policy ID",
+        "The route learned most recently"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: The route with the lowest priority value This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: The route with the lowest priority value"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhat does administrative distance compare?",
+      "question": "What does administrative distance compare?",
       "options": [
         "Competing routes to the same destination",
         "Interface speeds only",
@@ -320,142 +320,142 @@
         "HA heartbeat latency"
       ],
       "answer": 0,
-      "explanation": "The correct selection is: Competing routes to the same destination This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Competing routes to the same destination"
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhich table can contain inactive or standby route candidates that are not installed as active forwarding routes?",
+      "question": "Which table can contain inactive or standby route candidates that are not installed as active forwarding routes?",
       "options": [
-        "Session table",
+        "FIB only",
         "Routing table database",
-        "ARP table",
-        "FIB only"
+        "Session table",
+        "ARP table"
       ],
       "answer": 1,
-      "explanation": "The correct selection is: Routing table database This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Routing table database"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhen does FortiGate perform a reverse path forwarding (RPF) check?",
+      "question": "When does FortiGate perform a reverse path forwarding (RPF) check?",
       "options": [
-        "Only for DNAT sessions",
         "On every packet",
         "On the first packet of a new session",
-        "Only on reply packets"
+        "Only on reply packets",
+        "Only for DNAT sessions"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: On the first packet of a new session This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: On the first packet of a new session"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhat does feasible-path RPF require?",
+      "question": "What does feasible-path RPF require?",
       "options": [
+        "The best route to the source must use the incoming interface.",
         "A possible route to the source must use the incoming interface.",
-        "Only a default route may exist.",
         "There must be no route to the source.",
-        "The best route to the source must use the incoming interface."
+        "Only a default route may exist."
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: A possible route to the source must use the incoming interface. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: A possible route to the source must use the incoming interface."
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhat does strict RPF require?",
+      "question": "What does strict RPF require?",
       "options": [
-        "ECMP must be disabled.",
-        "A VIP must exist for the source.",
         "Any route to the source may use the incoming interface.",
-        "The best route to the source must use the incoming interface."
+        "The best route to the source must use the incoming interface.",
+        "ECMP must be disabled.",
+        "A VIP must exist for the source."
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: The best route to the source must use the incoming interface. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: The best route to the source must use the incoming interface."
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhich ECMP load-balancing method is the default when SD-WAN is disabled?",
+      "question": "Which ECMP load-balancing method is the default when SD-WAN is disabled?",
       "options": [
+        "Volume-based",
         "Source IP",
         "Spillover",
-        "Volume-based",
         "Random"
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: Source IP This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Source IP"
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhich load-balancing method is available with SD-WAN but not with v4-ecmp-mode when SD-WAN is disabled?",
+      "question": "Which load-balancing method is available with SD-WAN but not with v4-ecmp-mode when SD-WAN is disabled?",
       "options": [
-        "Spillover",
         "Source IP",
         "Source-destination IP",
-        "Volume-based"
+        "Volume-based",
+        "Spillover"
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: Volume-based This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 2,
+      "explanation": "Correct answer: Volume-based"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich protocol provides encrypted LDAP authentication on the standard secure port?",
+      "question": "Which protocol provides encrypted LDAP authentication on the standard secure port?",
       "options": [
         "LDAP over TCP/389 without TLS",
         "LDAPS over TCP/636",
-        "SMB over TCP/445",
-        "IKE over UDP/500"
+        "IKE over UDP/500",
+        "SMB over TCP/445"
       ],
       "answer": 1,
-      "explanation": "The correct selection is: LDAPS over TCP/636 This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: LDAPS over TCP/636"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhich RADIUS response can request an additional authentication step, such as a second factor?",
+      "question": "Which RADIUS response can request an additional authentication step, such as a second factor?",
       "options": [
         "Access-Reject",
+        "Access-Challenge",
         "ICMP Redirect",
-        "IKE_AUTH",
-        "Access-Challenge"
-      ],
-      "answer": 3,
-      "explanation": "The correct selection is: Access-Challenge This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
-    },
-    {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nAn identity-based policy is followed by a more general policy that does not require authentication. What can happen before the user authenticates?",
-      "options": [
-        "RADIUS is converted to local authentication.",
-        "The general policy can match and permit traffic without displaying an authentication prompt.",
-        "Deep inspection is automatically enabled.",
-        "FortiGate always reboots."
+        "IKE_AUTH"
       ],
       "answer": 1,
-      "explanation": "The correct selection is: The general policy can match and permit traffic without displaying an authentication prompt. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Access-Challenge"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhich service may be allowed before successful active firewall authentication, provided it is included in the authentication policy?",
+      "question": "An identity-based policy is followed by a more general policy that does not require authentication. What can happen before the user authenticates?",
+      "options": [
+        "The general policy can match and permit traffic without displaying an authentication prompt.",
+        "FortiGate always reboots.",
+        "RADIUS is converted to local authentication.",
+        "Deep inspection is automatically enabled."
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: The general policy can match and permit traffic without displaying an authentication prompt."
+    },
+    {
+      "question": "Which service may be allowed before successful active firewall authentication, provided it is included in the authentication policy?",
       "options": [
         "SMB",
-        "ESP",
+        "DNS",
         "SSH",
-        "DNS"
-      ],
-      "answer": 3,
-      "explanation": "The correct selection is: DNS This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
-    },
-    {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhich authentication timeout is an absolute timer that starts when the user authenticates?",
-      "options": [
-        "ARP timeout",
-        "New-session timeout",
-        "Hard timeout",
-        "Idle timeout"
-      ],
-      "answer": 2,
-      "explanation": "The correct selection is: Hard timeout This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
-    },
-    {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich FSSO architecture is generally the most scalable?",
-      "options": [
-        "Local users",
-        "DC Agent with Collector Agent",
-        "RSSO only",
-        "Agentless polling by FortiGate"
+        "ESP"
       ],
       "answer": 1,
-      "explanation": "The correct selection is: DC Agent with Collector Agent This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: DNS"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhich default port does the FSSO Collector Agent use to communicate with FortiGate?",
+      "question": "Which authentication timeout is an absolute timer that starts when the user authenticates?",
+      "options": [
+        "Idle timeout",
+        "Hard timeout",
+        "New-session timeout",
+        "ARP timeout"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: Hard timeout"
+    },
+    {
+      "question": "Which FSSO architecture is generally the most scalable?",
+      "options": [
+        "Agentless polling by FortiGate",
+        "DC Agent with Collector Agent",
+        "RSSO only",
+        "Local users"
+      ],
+      "answer": 1,
+      "explanation": "Correct answer: DC Agent with Collector Agent"
+    },
+    {
+      "question": "Which default port does the FSSO Collector Agent use to communicate with FortiGate?",
       "options": [
         "TCP/8000",
         "UDP/8002",
@@ -463,245 +463,245 @@
         "UDP/514"
       ],
       "answer": 0,
-      "explanation": "The correct selection is: TCP/8000 This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: TCP/8000"
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhich default port does the FSSO DC Agent use to send events to the Collector Agent?",
+      "question": "Which default port does the FSSO DC Agent use to send events to the Collector Agent?",
       "options": [
         "TCP/8000",
-        "UDP/1812",
+        "UDP/8002",
         "TCP/445",
-        "UDP/8002"
-      ],
-      "answer": 3,
-      "explanation": "The correct selection is: UDP/8002 This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
-    },
-    {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhich Collector Agent polling method is generally recommended?",
-      "options": [
-        "NetAPI",
-        "WMI",
-        "Syslog",
-        "SNMP"
+        "UDP/1812"
       ],
       "answer": 1,
-      "explanation": "The correct selection is: WMI This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: UDP/8002"
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhich Windows function is used by FSSO NetAPI polling to track sessions and logouts?",
+      "question": "Which Collector Agent polling method is generally recommended?",
       "options": [
-        "ARPEnum",
-        "IKE_SA_INIT",
-        "GetUserToken",
-        "NetSessionEnum"
+        "WMI",
+        "NetAPI",
+        "SNMP",
+        "Syslog"
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: NetSessionEnum This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: WMI"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhy is accurate DNS important for FSSO?",
+      "question": "Which Windows function is used by FSSO NetAPI polling to track sessions and logouts?",
       "options": [
-        "FSSO authenticates users only through DNS.",
+        "NetSessionEnum",
+        "GetUserToken",
+        "IKE_SA_INIT",
+        "ARPEnum"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: NetSessionEnum"
+    },
+    {
+      "question": "Why is accurate DNS important for FSSO?",
+      "options": [
         "Logon events can provide a workstation name that must be resolved to the current client IP address.",
+        "FSSO authenticates users only through DNS.",
         "DNS determines HA priority.",
         "DNS replaces LDAP group membership."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: Logon events can provide a workstation name that must be resolved to the current client IP address. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Logon events can provide a workstation name that must be resolved to the current client IP address."
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhat is the purpose of the FSSO Ignore User List?",
+      "question": "What is the purpose of the FSSO Ignore User List?",
       "options": [
-        "Disable SSL inspection.",
-        "Prevent all users from logging out.",
+        "Prevent service accounts from overwriting mappings for interactive users.",
         "Prevent FortiGate from learning routes.",
-        "Prevent service accounts from overwriting mappings for interactive users."
+        "Disable SSL inspection.",
+        "Prevent all users from logging out."
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: Prevent service accounts from overwriting mappings for interactive users. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Prevent service accounts from overwriting mappings for interactive users."
     },
     {
-      "question": "During a FortiOS 7.6 configuration review, an administrator must identify the 3 statements that are consistent with the documented behavior described below. Which 3 statements are correct? (Choose 3.)\n\nTopic under review: Which three items are part of server certificate validation? (Choose three.)",
+      "question": "Which three items are part of server certificate validation? (Choose three.)",
       "options": [
-        "SD-WAN cost",
-        "Validity period",
         "Issuer and trust chain",
-        "Certificate signature"
+        "Validity period",
+        "Certificate signature",
+        "SD-WAN cost"
       ],
       "answer": [
+        0,
         1,
-        2,
-        3
+        2
       ],
-      "explanation": "The correct selection is: Issuer and trust chain; Validity period; Certificate signature This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answers: Issuer and trust chain; Validity period; Certificate signature"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhat cannot be achieved with certificate inspection alone?",
+      "question": "What cannot be achieved with certificate inspection alone?",
       "options": [
-        "Support website categorization",
-        "Perform full antivirus inspection of the encrypted payload",
+        "Read SNI",
         "Inspect CN/SAN fields",
-        "Read SNI"
+        "Perform full antivirus inspection of the encrypted payload",
+        "Support website categorization"
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: Perform full antivirus inspection of the encrypted payload This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 2,
+      "explanation": "Correct answer: Perform full antivirus inspection of the encrypted payload"
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nAfter enabling deep SSL inspection, browsers show certificate warnings on all HTTPS websites. What is the most likely cause?",
+      "question": "After enabling deep SSL inspection, browsers show certificate warnings on all HTTPS websites. What is the most likely cause?",
       "options": [
-        "DNS uses TCP.",
+        "Clients do not trust the FortiGate inspection CA.",
         "Strict RPF is enabled.",
         "DPD is disabled.",
-        "Clients do not trust the FortiGate inspection CA."
+        "DNS uses TCP."
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: Clients do not trust the FortiGate inspection CA. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Clients do not trust the FortiGate inspection CA."
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nServer Certificate SNI Check is set to Strict. What happens when SNI does not match the certificate CN or SAN?",
+      "question": "Server Certificate SNI Check is set to Strict. What happens when SNI does not match the certificate CN or SAN?",
       "options": [
-        "FortiGate falls back to HTTP.",
+        "FortiGate only logs the mismatch.",
         "FortiGate closes the connection.",
-        "FortiGate skips certificate validation.",
-        "FortiGate only logs the mismatch."
+        "FortiGate falls back to HTTP.",
+        "FortiGate skips certificate validation."
       ],
       "answer": 1,
-      "explanation": "The correct selection is: FortiGate closes the connection. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: FortiGate closes the connection."
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhy can certificate pinning require an SSL inspection exemption?",
+      "question": "Why can certificate pinning require an SSL inspection exemption?",
       "options": [
         "The application rejects the substitute certificate generated during deep inspection.",
-        "NAT-T is unavailable.",
         "The route is too specific.",
+        "NAT-T is unavailable.",
         "The administrator timeout is too low."
       ],
       "answer": 0,
-      "explanation": "The correct selection is: The application rejects the substitute certificate generated during deep inspection. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: The application rejects the substitute certificate generated during deep inspection."
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhich antivirus inspection mode uses a hybrid scanning approach optimized for performance?",
+      "question": "Which antivirus inspection mode uses a hybrid scanning approach optimized for performance?",
       "options": [
-        "Collector",
-        "Transparent",
+        "Flow-based",
         "Proxy-based",
-        "Flow-based"
+        "Transparent",
+        "Collector"
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: Flow-based This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Flow-based"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhich security feature is primarily associated with proxy-based content processing?",
+      "question": "Which security feature is primarily associated with proxy-based content processing?",
       "options": [
         "Content Disarm and Reconstruction (CDR)",
         "ECMP",
-        "DPD",
-        "RPF"
+        "RPF",
+        "DPD"
       ],
       "answer": 0,
-      "explanation": "The correct selection is: Content Disarm and Reconstruction (CDR) This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Content Disarm and Reconstruction (CDR)"
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nHTTPS malware is not detected even though an antivirus profile is applied to the policy. What should you verify first?",
+      "question": "HTTPS malware is not detected even though an antivirus profile is applied to the policy. What should you verify first?",
       "options": [
-        "SD-WAN zone name",
-        "Administrator trusted hosts",
         "SSL inspection and security-profile assignment",
-        "HA serial number"
+        "HA serial number",
+        "Administrator trusted hosts",
+        "SD-WAN zone name"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: SSL inspection and security-profile assignment This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: SSL inspection and security-profile assignment"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich web-filter action allows traffic and generates a web-filter security log?",
+      "question": "Which web-filter action allows traffic and generates a web-filter security log?",
       "options": [
-        "Exempt",
         "Allow",
         "Monitor",
+        "Exempt",
         "Disable"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: Monitor This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Monitor"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhich static URL filter action bypasses further security inspection?",
+      "question": "Which static URL filter action bypasses further security inspection?",
       "options": [
-        "Exempt",
         "Block",
         "Warning",
+        "Exempt",
         "Authenticate"
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: Exempt This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 2,
+      "explanation": "Correct answer: Exempt"
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhich web-filter processing order is correct?",
+      "question": "Which web-filter processing order is correct?",
       "options": [
         "FortiGuard categories, static URL filter, advanced filters",
-        "Only category filtering is evaluated",
+        "Static URL filter, FortiGuard category filtering, advanced filters",
         "Advanced filters, static URL filter, categories",
-        "Static URL filter, FortiGuard category filtering, advanced filters"
+        "Only category filtering is evaluated"
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: Static URL filter, FortiGuard category filtering, advanced filters This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Static URL filter, FortiGuard category filtering, advanced filters"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nA web filter profile that uses daily category usage quota is not available in a flow-based firewall policy. Why?",
+      "question": "A web filter profile that uses daily category usage quota is not available in a flow-based firewall policy. Why?",
       "options": [
-        "DNS is too fast.",
         "The profile contains a proxy-based feature that does not match the policy inspection mode.",
+        "DNS is too fast.",
         "The policy ID is too high.",
         "DPD is On Demand."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: The profile contains a proxy-based feature that does not match the policy inspection mode. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: The profile contains a proxy-based feature that does not match the policy inspection mode."
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhat are the two primary building blocks of an IPS sensor?",
+      "question": "What are the two primary building blocks of an IPS sensor?",
       "options": [
+        "Filters and signatures",
         "Routes and VIPs",
-        "Zones and SLAs",
         "Users and tokens",
-        "Filters and signatures"
+        "Zones and SLAs"
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: Filters and signatures This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Filters and signatures"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich IPS configuration is used to trigger an action after a signature reaches a threshold within a configured period?",
+      "question": "Which IPS configuration is used to trigger an action after a signature reaches a threshold within a configured period?",
       "options": [
-        "match-vip",
+        "rate-mode periodical",
         "policy route",
-        "session pickup",
-        "rate-mode periodical"
+        "match-vip",
+        "session pickup"
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: rate-mode periodical This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: rate-mode periodical"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nAn IPS sensor exists but no firewall policy references it. What is the result?",
+      "question": "An IPS sensor exists but no firewall policy references it. What is the result?",
       "options": [
         "The sensor automatically inspects local-in traffic.",
-        "Only IPS logging stops.",
         "The sensor does not inspect production traffic until it is applied to a relevant policy.",
-        "The sensor becomes global."
+        "The sensor becomes global.",
+        "Only IPS logging stops."
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: The sensor does not inspect production traffic until it is applied to a relevant policy. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: The sensor does not inspect production traffic until it is applied to a relevant policy."
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhich IPS action actively terminates a detected TCP session?",
+      "question": "Which IPS action actively terminates a detected TCP session?",
       "options": [
-        "Reset",
         "Monitor",
+        "Reset",
         "Allow",
         "Exempt"
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: Reset This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: Reset"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhich Application Control entries are evaluated before category actions?",
+      "question": "Which Application Control entries are evaluated before category actions?",
       "options": [
         "Application and Filter Overrides",
         "Static routes",
@@ -709,43 +709,43 @@
         "IP pools"
       ],
       "answer": 0,
-      "explanation": "The correct selection is: Application and Filter Overrides This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Application and Filter Overrides"
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nA broad Excessive-Bandwidth override is placed above a specific Google override. What can happen?",
+      "question": "A broad Excessive-Bandwidth override is placed above a specific Google override. What can happen?",
       "options": [
-        "The policy becomes a local-in policy.",
-        "Google ignores all overrides.",
         "Google traffic can match the broader override first.",
+        "Google ignores all overrides.",
+        "The policy becomes a local-in policy.",
         "FortiAnalyzer stops receiving logs."
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: Google traffic can match the broader override first. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Google traffic can match the broader override first."
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich statement about Application Control is correct?",
+      "question": "Which statement about Application Control is correct?",
       "options": [
+        "It identifies applications only by port number.",
         "It uses the IPS engine and application signatures/behavior.",
         "It works only in proxy mode.",
-        "It identifies applications only by port number.",
         "It replaces firewall policies."
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: It uses the IPS engine and application signatures/behavior. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: It uses the IPS engine and application signatures/behavior."
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhat is required for maximum Application Control visibility into HTTPS payloads?",
+      "question": "What is required for maximum Application Control visibility into HTTPS payloads?",
       "options": [
-        "HA override",
-        "ARP reply",
         "Deep SSL inspection",
-        "Certificate inspection only"
+        "Certificate inspection only",
+        "ARP reply",
+        "HA override"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: Deep SSL inspection This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Deep SSL inspection"
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhich IPsec transport mapping is correct?",
+      "question": "Which IPsec transport mapping is correct?",
       "options": [
         "IKE UDP/500, NAT-T UDP/4500, ESP IP protocol 50",
         "IKE TCP/443, NAT-T UDP/500, ESP 51",
@@ -753,83 +753,83 @@
         "IKE TCP/22, NAT-T UDP/514, ESP 6"
       ],
       "answer": 0,
-      "explanation": "The correct selection is: IKE UDP/500, NAT-T UDP/4500, ESP IP protocol 50 This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: IKE UDP/500, NAT-T UDP/4500, ESP IP protocol 50"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhat is the purpose of IPsec Phase 1?",
+      "question": "What is the purpose of IPsec Phase 1?",
       "options": [
-        "Elect the HA primary.",
         "Create the protected IKE control channel and authenticate peers.",
+        "Install web-filter categories.",
         "Create a VIP.",
-        "Install web-filter categories."
+        "Elect the HA primary."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: Create the protected IKE control channel and authenticate peers. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Create the protected IKE control channel and authenticate peers."
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhat do IPsec Phase 2 selectors define?",
+      "question": "What do IPsec Phase 2 selectors define?",
       "options": [
-        "Administrator trusted hosts",
-        "HA heartbeat addresses",
         "The encryption domain for protected user traffic",
-        "FortiAnalyzer transport"
+        "Administrator trusted hosts",
+        "FortiAnalyzer transport",
+        "HA heartbeat addresses"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: The encryption domain for protected user traffic This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: The encryption domain for protected user traffic"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhen does IKE normally move to UDP/4500?",
+      "question": "When does IKE normally move to UDP/4500?",
       "options": [
         "When NAT is detected and NAT-T is used.",
-        "When FSSO fails.",
         "When strict RPF is enabled.",
+        "When FSSO fails.",
         "When reliable logging is enabled."
       ],
       "answer": 0,
-      "explanation": "The correct selection is: When NAT is detected and NAT-T is used. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: When NAT is detected and NAT-T is used."
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhich DPD mode is the FortiGate default?",
+      "question": "Which DPD mode is the FortiGate default?",
       "options": [
-        "On Demand",
         "On Idle",
-        "Strict",
-        "Disabled"
+        "On Demand",
+        "Disabled",
+        "Strict"
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: On Demand This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: On Demand"
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWith add-route enabled on a dial-up IPsec VPN, when is the route dynamically installed?",
+      "question": "With add-route enabled on a dial-up IPsec VPN, when is the route dynamically installed?",
       "options": [
+        "As soon as Phase 1 is saved.",
         "When Phase 2 is established with the correct remote selector.",
         "Only after a reboot.",
-        "Only when BGP is enabled.",
-        "As soon as Phase 1 is saved."
+        "Only when BGP is enabled."
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: When Phase 2 is established with the correct remote selector. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: When Phase 2 is established with the correct remote selector."
     },
     {
-      "question": "During a FortiOS 7.6 configuration review, an administrator must identify the 2 statements that are consistent with the documented behavior described below. Which 2 statements are correct? (Choose 2.)\n\nTopic under review: Phase 1 is established, but IPsec user traffic fails. Which two areas should be checked first? (Choose two.)",
+      "question": "Phase 1 is established, but IPsec user traffic fails. Which two areas should be checked first? (Choose two.)",
       "options": [
-        "FortiAnalyzer mode",
         "Phase 2 selectors and SAs",
         "Routes and firewall policies",
-        "Administrator idle timeout"
+        "Administrator idle timeout",
+        "FortiAnalyzer mode"
       ],
       "answer": [
-        1,
-        2
+        0,
+        1
       ],
-      "explanation": "The correct selection is: Phase 2 selectors and SAs; Routes and firewall policies This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answers: Phase 2 selectors and SAs; Routes and firewall policies"
     },
     {
-      "question": "During a FortiOS 7.6 configuration review, an administrator must identify the 3 statements that are consistent with the documented behavior described below. Which 3 statements are correct? (Choose 3.)\n\nTopic under review: Which three SD-WAN rule strategies are valid? (Choose three.)",
+      "question": "Which three SD-WAN rule strategies are valid? (Choose three.)",
       "options": [
         "Manual",
-        "Lowest Cost (SLA)",
         "Best Quality",
+        "Lowest Cost (SLA)",
         "Lowest Quality"
       ],
       "answer": [
@@ -837,285 +837,285 @@
         1,
         2
       ],
-      "explanation": "The correct selection is: Manual; Best Quality; Lowest Cost (SLA) This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answers: Manual; Best Quality; Lowest Cost (SLA)"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich three metrics can a Performance SLA measure?",
+      "question": "Which three metrics can a Performance SLA measure?",
       "options": [
-        "CN, SAN, and SNI",
+        "Packet loss, latency, and jitter",
         "CPU, memory, and disk",
-        "Distance, metric, and priority",
-        "Packet loss, latency, and jitter"
+        "CN, SAN, and SNI",
+        "Distance, metric, and priority"
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: Packet loss, latency, and jitter This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Packet loss, latency, and jitter"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhat is the default active Performance SLA probe interval, approximately?",
+      "question": "What is the default active Performance SLA probe interval, approximately?",
       "options": [
         "50 ms",
+        "500 ms",
         "5 seconds",
-        "60 seconds",
-        "500 ms"
+        "60 seconds"
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: 500 ms This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: 500 ms"
     },
     {
-      "question": "During a FortiOS 7.6 configuration review, an administrator must identify the 2 statements that are consistent with the documented behavior described below. Which 2 statements are correct? (Choose 2.)\n\nTopic under review: Which two conditions must a candidate SD-WAN member satisfy? (Choose two.)",
+      "question": "Which two conditions must a candidate SD-WAN member satisfy? (Choose two.)",
       "options": [
-        "A valid route to the destination exists through the member.",
         "The member is alive.",
-        "HA override is enabled.",
-        "The firewall policy ID is below 10."
+        "A valid route to the destination exists through the member.",
+        "The firewall policy ID is below 10.",
+        "HA override is enabled."
       ],
       "answer": [
         0,
         1
       ],
-      "explanation": "The correct selection is: The member is alive.; A valid route to the destination exists through the member. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answers: The member is alive.; A valid route to the destination exists through the member."
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nDoes an SD-WAN rule permit traffic by itself?",
+      "question": "Does an SD-WAN rule permit traffic by itself?",
       "options": [
-        "No, a firewall policy is still required.",
         "Yes, no firewall policy is required.",
-        "Only in transparent mode.",
-        "Only for HTTP traffic."
+        "No, a firewall policy is still required.",
+        "Only for HTTP traffic.",
+        "Only in transparent mode."
       ],
-      "answer": 0,
-      "explanation": "The correct selection is: No, a firewall policy is still required. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 1,
+      "explanation": "Correct answer: No, a firewall policy is still required."
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nA Best Quality SD-WAN rule has two alive members. What determines which member is preferred?",
+      "question": "A Best Quality SD-WAN rule has two alive members. What determines which member is preferred?",
       "options": [
         "The configured quality criteria and measured SLA values",
-        "The administrator idle timeout",
+        "The lowest firewall policy ID",
         "The HA serial number",
-        "The lowest firewall policy ID"
+        "The administrator idle timeout"
       ],
       "answer": 0,
-      "explanation": "The correct selection is: The configured quality criteria and measured SLA values This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: The configured quality criteria and measured SLA values"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhat is the primary election order when HA override is disabled?",
+      "question": "What is the primary election order when HA override is disabled?",
       "options": [
         "Connected monitored ports > HA uptime > priority > serial number",
-        "HA uptime > serial number > ports > priority",
+        "Priority > serial number > HA uptime > ports",
         "Serial number > priority > ports > HA uptime",
-        "Priority > serial number > HA uptime > ports"
+        "HA uptime > serial number > ports > priority"
       ],
       "answer": 0,
-      "explanation": "The correct selection is: Connected monitored ports > HA uptime > priority > serial number This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Connected monitored ports > HA uptime > priority > serial number"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhat changes in the primary election when HA override is enabled?",
+      "question": "What changes in the primary election when HA override is enabled?",
       "options": [
-        "Serial number is evaluated before monitored ports.",
         "Priority is evaluated before HA uptime.",
+        "Serial number is evaluated before monitored ports.",
         "HA uptime is completely ignored.",
         "Heartbeat is disabled."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: Priority is evaluated before HA uptime. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Priority is evaluated before HA uptime."
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhich HA setting is not automatically synchronized between cluster members?",
+      "question": "Which HA setting is not automatically synchronized between cluster members?",
       "options": [
-        "DHCP leases",
         "HA priority",
         "FIB entries",
-        "ARP table"
+        "ARP table",
+        "DHCP leases"
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: HA priority This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: HA priority"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhich statement about HA heartbeat IP addresses is correct?",
+      "question": "Which statement about HA heartbeat IP addresses is correct?",
       "options": [
-        "The primary always permanently owns 169.254.0.1.",
         "They can change when a member joins or leaves the cluster.",
+        "The primary always permanently owns 169.254.0.1.",
         "They are configured as normal LAN addresses.",
         "They are external VIP addresses."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: They can change when a member joins or leaves the cluster. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: They can change when a member joins or leaves the cluster."
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhy are two heartbeat interfaces recommended for an HA cluster?",
+      "question": "Why are two heartbeat interfaces recommended for an HA cluster?",
       "options": [
-        "To double NAT capacity.",
         "To provide redundant cluster communication paths.",
-        "To reduce the administrator timeout.",
-        "To download two web-filter databases."
+        "To double NAT capacity.",
+        "To download two web-filter databases.",
+        "To reduce the administrator timeout."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: To provide redundant cluster communication paths. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: To provide redundant cluster communication paths."
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich command captures packets and includes interface information with verbosity 4?",
+      "question": "Which command captures packets and includes interface information with verbosity 4?",
       "options": [
+        "diagnose sniffer packet any <filter> 4",
         "get system status 4",
         "execute ping 4",
-        "diagnose sniffer packet any <filter> 4",
         "diagnose sys top 4"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: diagnose sniffer packet any <filter> 4 This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: diagnose sniffer packet any <filter> 4"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhich diagnostic tool shows session creation, route lookup, firewall-policy matching, NAT, and drop reasons?",
+      "question": "Which diagnostic tool shows session creation, route lookup, firewall-policy matching, NAT, and drop reasons?",
       "options": [
-        "ARP reply",
-        "Traceroute only",
         "Debug flow",
-        "FortiView map"
+        "Traceroute only",
+        "FortiView map",
+        "ARP reply"
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: Debug flow This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Debug flow"
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhen does FortiGate enter conserve mode?",
+      "question": "When does FortiGate enter conserve mode?",
       "options": [
-        "When UDP/514 is used.",
         "When memory usage crosses the red threshold.",
-        "After every HA failover.",
-        "After every IPS detection."
+        "After every IPS detection.",
+        "When UDP/514 is used.",
+        "After every HA failover."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: When memory usage crosses the red threshold. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: When memory usage crosses the red threshold."
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhat can happen when memory usage reaches the extreme threshold?",
+      "question": "What can happen when memory usage reaches the extreme threshold?",
       "options": [
-        "SNI checking is disabled.",
-        "All routes become BGP routes.",
         "New sessions can be dropped.",
+        "All routes become BGP routes.",
+        "SNI checking is disabled.",
         "DPD changes to On Idle."
       ],
-      "answer": 2,
-      "explanation": "The correct selection is: New sessions can be dropped. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: New sessions can be dropped."
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhy should existing sessions be considered when testing a firewall-policy change?",
+      "question": "Why should existing sessions be considered when testing a firewall-policy change?",
       "options": [
-        "Every policy change automatically clears all sessions.",
         "Existing sessions can continue using previously determined policy, route, and NAT state.",
+        "Every policy change automatically clears all sessions.",
         "Sessions determine DNS zones.",
         "Policies require a reboot before becoming active."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: Existing sessions can continue using previously determined policy, route, and NAT state. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Existing sessions can continue using previously determined policy, route, and NAT state."
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nWhich AWS setting must be disabled on an ENI used by FortiGate to route traffic for other instances?",
+      "question": "Which AWS setting must be disabled on an ENI used by FortiGate to route traffic for other instances?",
       "options": [
-        "Availability Zone",
         "Source/destination check",
         "Elastic IP",
-        "Security Group logging"
+        "Security Group logging",
+        "Availability Zone"
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: Source/destination check This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Source/destination check"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhich AWS object connects a customer VPC traffic path to a Gateway Load Balancer?",
+      "question": "Which AWS object connects a customer VPC traffic path to a Gateway Load Balancer?",
       "options": [
-        "FortiToken",
         "Gateway Load Balancer endpoint (GWLBe)",
-        "FSSO Collector",
-        "VIP port forward"
+        "FortiToken",
+        "VIP port forward",
+        "FSSO Collector"
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: Gateway Load Balancer endpoint (GWLBe) This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: Gateway Load Balancer endpoint (GWLBe)"
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nFor routes with the same prefix length in Azure, what is the route-source preference?",
+      "question": "For routes with the same prefix length in Azure, what is the route-source preference?",
       "options": [
         "System route > BGP > UDR",
         "UDR > BGP > system route",
-        "Highest metric first",
-        "BGP > system route > UDR"
+        "BGP > system route > UDR",
+        "Highest metric first"
       ],
       "answer": 1,
-      "explanation": "The correct selection is: UDR > BGP > system route This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: UDR > BGP > system route"
     },
     {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nWhich route-selection rule is evaluated before Azure route-source preference?",
+      "question": "Which route-selection rule is evaluated before Azure route-source preference?",
       "options": [
-        "Lowest Cost SLA",
+        "Longest prefix match",
         "Highest NSG priority number",
         "HA uptime",
-        "Longest prefix match"
-      ],
-      "answer": 3,
-      "explanation": "The correct selection is: Longest prefix match This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
-    },
-    {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nWhich FortiSASE use case protects remote-user Internet access?",
-      "options": [
-        "Secure Internet Access (SIA)",
-        "High Availability",
-        "Secure Private Access (SPA)",
-        "Secure SaaS Access only"
+        "Lowest Cost SLA"
       ],
       "answer": 0,
-      "explanation": "The correct selection is: Secure Internet Access (SIA) This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Longest prefix match"
     },
     {
-      "question": "An administrator is validating a FortiGate deployment after a configuration change. Which option is correct for the following topic?\n\nHow does FortiExtender connect to FortiSASE for site-based remote Internet access?",
+      "question": "Which FortiSASE use case protects remote-user Internet access?",
       "options": [
-        "PAC over SNMP",
-        "ESP without a tunnel",
+        "Secure Internet Access (SIA)",
+        "Secure Private Access (SPA)",
+        "Secure SaaS Access only",
+        "High Availability"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Secure Internet Access (SIA)"
+    },
+    {
+      "question": "How does FortiExtender connect to FortiSASE for site-based remote Internet access?",
+      "options": [
+        "VXLAN over IPsec",
         "GRE over HTTP",
-        "VXLAN over IPsec"
+        "PAC over SNMP",
+        "ESP without a tunnel"
       ],
-      "answer": 3,
-      "explanation": "The correct selection is: VXLAN over IPsec This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: VXLAN over IPsec"
     },
     {
-      "question": "During troubleshooting, an engineer compares the observed behavior with the FortiOS 7.6 design. Which option is correct for the following topic?\n\nWhat is normally used to direct web traffic to FortiSASE in an agentless explicit web-proxy deployment?",
+      "question": "What is normally used to direct web traffic to FortiSASE in an agentless explicit web-proxy deployment?",
       "options": [
-        "DPD",
         "A PAC file",
+        "An FSSO DC Agent",
         "VIP ARP reply",
-        "An FSSO DC Agent"
+        "DPD"
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: A PAC file This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: A PAC file"
     },
     {
-      "question": "A security engineer is reviewing a FortiGate configuration before production deployment. Which option is correct for the following topic?\n\nWhich FortiSASE use case provides access to private applications?",
+      "question": "Which FortiSASE use case provides access to private applications?",
       "options": [
+        "Secure Private Access (SPA)",
         "Secure Internet Access (SIA)",
         "Secure SaaS Access only",
-        "Collector mode",
-        "Secure Private Access (SPA)"
-      ],
-      "answer": 3,
-      "explanation": "The correct selection is: Secure Private Access (SPA) This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
-    },
-    {
-      "question": "During an operational audit, the team must select the statement that matches FortiOS 7.6 behavior. Which option is correct for the following topic?\n\nAn HTTPS application works with certificate inspection, but IPS does not detect a payload exploit. What is most likely missing?",
-      "options": [
-        "Deep SSL inspection",
-        "Collector mode",
-        "Port block allocation",
-        "HA override"
+        "Collector mode"
       ],
       "answer": 0,
-      "explanation": "The correct selection is: Deep SSL inspection This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "explanation": "Correct answer: Secure Private Access (SPA)"
     },
     {
-      "question": "A FortiGate administrator is investigating an unexpected result and needs the most accurate explanation. Which option is correct for the following topic?\n\nA user never receives an authentication prompt even though an identity policy is above a general Internet policy. What is the most likely explanation?",
+      "question": "An HTTPS application works with certificate inspection, but IPS does not detect a payload exploit. What is most likely missing?",
       "options": [
-        "ARP reply is enabled.",
+        "Deep SSL inspection",
+        "HA override",
+        "Port block allocation",
+        "Collector mode"
+      ],
+      "answer": 0,
+      "explanation": "Correct answer: Deep SSL inspection"
+    },
+    {
+      "question": "A user never receives an authentication prompt even though an identity policy is above a general Internet policy. What is the most likely explanation?",
+      "options": [
         "The more general policy matches after authentication fall-through.",
         "ESP uses IP protocol 50.",
+        "ARP reply is enabled.",
         "FortiAnalyzer uses TCP."
       ],
-      "answer": 1,
-      "explanation": "The correct selection is: The more general policy matches after authentication fall-through. This follows the FortiOS 7.6 Administrator Study Guide behavior for this topic; the other choices either reverse the documented order, use an unsupported mode, or describe a different FortiGate feature."
+      "answer": 0,
+      "explanation": "Correct answer: The more general policy matches after authentication fall-through."
     }
   ]
 }
